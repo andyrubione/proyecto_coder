@@ -815,3 +815,138 @@ header nav ul li{
 }
 
 }
+
+/* ANIMACIONES */
+
+.menu{
+    animation: fadeInDown;
+    animation-duration: 3s;
+}
+.el_turista{
+    animation: fadeInLeft;
+    animation-duration: 3s;
+}
+.presentacion{
+    animation: fadeInUp;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-play-state: scroll;
+}
+.presentacion2{
+    animation: fadeInUp;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-play-state: scroll;
+}
+.titulos{
+    animation:fadeIn;
+    animation-duration: 5s;
+}
+.desc1{
+    animation: fadeInUp;
+    animation-duration: 4s;
+}
+.img2{
+    animation: fadeInLeft;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.desc2{
+    animation: fadeInRight;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.img3{
+    animation: fadeInUp;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+.desc3{
+    animation: fadeInLeft;
+    animation-duration:4s;
+    animation-delay: 4s;
+}
+.p_fotografia{
+    animation: fadeInUp;
+    animation-duration: 4s;
+}
+.foto1{
+    animation: slideInLeft;
+    animation-duration: 4s;
+}
+.foto2{
+    animation: slideInRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.foto3{
+    animation: slideInLeft;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+.foto4{
+    animation: slideInRight;
+    animation-duration: 4s;
+    animation-delay: 6s;
+}
+.foto5{
+    animation: slideInLeft;
+    animation-duration: 4s;
+    animation-delay: 8s;
+}
+.foto6{
+    animation: slideInRight;
+    animation-duration: 4s;
+    animation-delay: 10s;
+}
+.foto7{
+    animation: slideInLeft;
+    animation-duration: 4s;
+    animation-delay: 12s;
+}
+.foto8{
+    animation: slideInRight;
+    animation-duration: 4s;
+    animation-delay: 14s;
+}
+.foto9{
+    animation: slideInLeft;
+    animation-duration: 4s;
+    animation-delay: 16s;
+}
+.foto10{
+    animation: slideInRight;
+    animation-duration: 4s;
+    animation-delay: 18s;
+}
+.foto11{
+    animation: slideInLeft;
+    animation-duration: 4s;
+    animation-delay: 20s;
+}
+.titulo_descripcion{
+    animation: fadeInUp;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.sub_titulo{
+    animation: fadeIn;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.subtitulo_desc{
+    animation: fadeInUp;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.sub_titulo1{
+    animation: fadeIn;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.nombre{
+        animation: fadeIn;
+        animation-duration: 10s;
+        animation-delay: 2s;
+}
+
