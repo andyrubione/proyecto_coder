@@ -182,12 +182,11 @@ footer ul li{
 font-family: 'Vujahday Script', cursive;
 font-size: 80px;
 color: rgba(0, 18, 58, 0.74);
-position: absolute;
 margin-top: 3rem;
+margin-bottom: 2rem;
 text-align: center;
 width: 40rem;
-left:50%;
-margin-left:-20rem;
+
 }
 .index{
     right: 2%;
@@ -204,7 +203,6 @@ section h1{
     color: rgba(0, 18, 58, 0.74);
     position: absolute;
     margin-top: 2rem;
-    margin-left: 1rem;
 }
 .grilla_conoceme {
     display: grid;
@@ -390,24 +388,11 @@ section h1{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 25px;
     text-align: center;
-    margin-top: 15rem;
     font-weight: 700;
-    position: absolute;
     max-width: 80%;
-    margin-left: 10%;
-    margin-right: -5%;
+    margin-bottom: 3rem;
 }
-.posicion_grilla{
-    margin-top: 23%;
-    margin-left: 10%;
-    
-}
-.grilla{
-    display: grid;
-    grid-template-columns: repeat;
-    grid-gap: 1rem;
-    margin-top: 23rem;
-}
+
 
 /* MEDIA */
 
@@ -496,8 +481,7 @@ header nav ul li{
 .titulos{
         font-size: 60px;
         margin-top: 4rem;
-        width: 20rem;
-        margin-left:-10rem;
+
 }
 
 /* FOTOGRAFIA */
@@ -508,17 +492,6 @@ header nav ul li{
         font-weight: 700;
         margin-bottom: 2rem;
         max-width: 80%;
-}
-.posicion_grilla{
-        margin-top: 23%;
-        margin-left: 10%;
-        
-}
-.grilla{
-        display: grid;
-        grid-template-columns: repeat;
-        margin-top: 13rem;
-        grid-gap: 1rem;
 }
 
 /* RECOMENDACIONES */
@@ -605,8 +578,7 @@ header nav ul li{
 .titulos{
         font-size: 45px;
         margin-top: 3rem;
-        width: 20rem;
-        margin-left:-10rem;
+
 }
 .contacto{
     margin-top: 6rem;
@@ -615,13 +587,6 @@ header nav ul li{
     height: 120vh; 
 }
 /* FOTOGRAFIA */
-.grilla{
-        display: grid;
-        grid-template-columns: repeat;
-        margin-top: 12rem;
-        grid-gap: 1rem;
-}
-
 
 /* RECOMENDACIONES */
 .video iframe{
@@ -696,8 +661,7 @@ header nav ul li{
 .titulos{
         font-size: 40px;
         margin-top: 4rem;
-        width: 20rem;
-        margin-left:-10rem;
+
 } 
 
 /* FOTOGRAFIA */
@@ -707,17 +671,6 @@ header nav ul li{
         margin-top: 40%;
         font-weight: 700;
         margin-bottom: 2rem;
-}
-.posicion_grilla{
-        margin-top: 30%;
-        margin-left: 10%;
-        
-}
-.grilla{
-        display: grid;
-        grid-template-columns: repeat;
-        margin-top: 16rem;
-        grid-gap: 1rem;
 }
 
 }
@@ -779,8 +732,7 @@ header nav ul li{
 .titulos{
     font-size: 30px;
     margin-top: 5rem;
-    width: 15rem;
-    margin-left:-7.5rem;
+
 } 
 .contacto{
     margin-top: 7rem;
@@ -792,17 +744,6 @@ header nav ul li{
     margin-top: 50%;
     font-weight: 700;
     margin-bottom: 2rem;
-}
-.posicion_grilla{
-    margin-top: 30%;
-    margin-left: 10%;
-    
-}
-.grilla{
-    display: grid;
-    grid-template-columns: repeat;
-    margin-top: 16rem;
-    grid-gap: 1rem;
 }
 
 }
@@ -861,60 +802,7 @@ header nav ul li{
     animation: fadeInUp;
     animation-duration: 4s;
 }
-.foto1{
-    animation: slideInLeft;
-    animation-duration: 4s;
-}
-.foto2{
-    animation: slideInRight;
-    animation-duration: 4s;
-    animation-delay: 2s;
-}
-.foto3{
-    animation: slideInLeft;
-    animation-duration: 4s;
-    animation-delay: 4s;
-}
-.foto4{
-    animation: slideInRight;
-    animation-duration: 4s;
-    animation-delay: 6s;
-}
-.foto5{
-    animation: slideInLeft;
-    animation-duration: 4s;
-    animation-delay: 8s;
-}
-.foto6{
-    animation: slideInRight;
-    animation-duration: 4s;
-    animation-delay: 10s;
-}
-.foto7{
-    animation: slideInLeft;
-    animation-duration: 4s;
-    animation-delay: 12s;
-}
-.foto8{
-    animation: slideInRight;
-    animation-duration: 4s;
-    animation-delay: 14s;
-}
-.foto9{
-    animation: slideInLeft;
-    animation-duration: 4s;
-    animation-delay: 16s;
-}
-.foto10{
-    animation: slideInRight;
-    animation-duration: 4s;
-    animation-delay: 18s;
-}
-.foto11{
-    animation: slideInLeft;
-    animation-duration: 4s;
-    animation-delay: 20s;
-}
+
 .titulo_descripcion{
     animation: fadeInUp;
     animation-duration: 4s;
