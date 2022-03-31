@@ -9,7 +9,9 @@ html{
 
 /* principio de la pagina, imagen de fondo y menu */
 
-
+.navbar{
+    z-index: 2;
+}
 a{
     text-decoration: none;
     color:#ff8e00;
@@ -19,7 +21,7 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    max-width: 100vw;
+    max-width: 99vw;
     grid-template-areas: "contenedor";
         
 }
@@ -59,6 +61,10 @@ body{
     width:100%;
     overflow-x:hidden;
 }
+body section div.row{
+    margin: 0px;
+    margin-top: 3rem;
+}
 .parallax {
     background-image: url(../Imagen/Fondo2.jpg);
     min-height: 800px; 
@@ -67,8 +73,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
+
 }
 .home {
     position: absolute;
@@ -122,20 +127,15 @@ header nav ul li {
     align-content: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-
 }
 .parallax2 {
     background-image: url(../Imagen/PANO_20211026_112913-02-01.jpeg);
     min-height:800px; 
     max-width: 100vw;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
+
 }
 .presentacion2{
     font-family: 'Source Sans Pro', sans-serif;
@@ -150,8 +150,6 @@ header nav ul li {
     align-content: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 section div ul li{
     list-style: none;
@@ -160,12 +158,9 @@ section div ul li{
     background-image: url(../Imagen/carancho.jpeg);
     min-height: 700px;
     max-width: 100vw; 
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
 }
 
 /* Fin de la presentacion */
@@ -478,9 +473,8 @@ header nav ul li{
 }
 .parallax2{
         min-height: 10rem;
-        background-position-y: 0rem;
-        background-size: contain;
-        background-attachment: local;
+        max-width: 100%;
+
 }
 .presentacion2{
         font-size: 15px;
@@ -680,19 +674,14 @@ header nav ul li{
         padding: 0 1rem;
 
 }
-.parallax2{
-        min-height: 7rem;
-}
+
 .presentacion2{
         font-size: 10px;
         margin-top: 2rem;
         margin-bottom: 2rem;
         padding: 0 1rem;
 }
-.parallax3{
-        min-height: 10rem;
-        background-position-y: 0rem;
-}
+
 .flex_foot{
         margin: 0rem;
         font-size: 13px;
@@ -773,12 +762,9 @@ header nav ul li{
     font-size: 10px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: 0 1rem;
+    padding: 0;
 }
-.parallax3{
-    min-height: 10rem;
-    background-position-y: 0rem;
-}
+
 .flex_foot{
     margin: 0rem;
     font-size: 13px;
