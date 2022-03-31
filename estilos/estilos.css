@@ -364,33 +364,28 @@ section h1{
 /* CONTACTO */
 
 .imagen_fondo{
+    position: absolute;
     background-image: url(../Imagen/back_contacto.jpeg);
     height: 100vh;  
-    width: 100vw;
+    width:100vw;
     background-position: center;
     background-size: cover ;
     background-repeat: no-repeat;
-    margin-bottom: 10px;
+    z-index: -1;
 
 }
 .contacto{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    font-size: 30px;
-    top: 11rem;
-    width: 20rem;
-    left:50%;
-    margin-left:-10rem;
+    font-size: 1rem;
     color: #ff8e00;
+    margin-top: 9rem;
 }
 .contacto_cuadros{
-    margin: 0.2rem;
     opacity: 0.8;
+    color: #ff8e00;
 }
-
+.ubicacion{
+    margin-top: 5rem;
+}
 /* FOTOGRAFIA */
 
 .p_fotografia{
@@ -502,8 +497,8 @@ header nav ul li{
 /* CONOCEME */
 
 .titulos{
-        font-size: 50px;
-        margin-top: 3rem;
+        font-size: 60px;
+        margin-top: 4rem;
         width: 20rem;
         margin-left:-10rem;
 }
@@ -568,7 +563,7 @@ header nav ul li{
 /* CONTACTO */
 
 .contacto{
-    top: 11rem;
+    top: 7rem;
     width: 20rem;
     left:50%;
     margin-left:-10rem;
@@ -576,7 +571,7 @@ header nav ul li{
 }
 
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 426px){
 
 /* INDEX */
 
@@ -616,7 +611,12 @@ header nav ul li{
         width: 20rem;
         margin-left:-10rem;
 }
-
+.contacto{
+    margin-top: 6rem;
+}
+.imagen_fondo{
+    height: 120vh; 
+}
 /* FOTOGRAFIA */
 .grilla{
         display: grid;
@@ -789,11 +789,13 @@ header nav ul li{
 
 .titulos{
     font-size: 30px;
-    margin-top: 6rem;
+    margin-top: 5rem;
     width: 15rem;
     margin-left:-7.5rem;
 } 
-
+.contacto{
+    margin-top: 7rem;
+}
 /* FOTOGRAFIA */
 
 .p_fotografia{
