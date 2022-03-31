@@ -27,18 +27,32 @@
     <!-- Fila de logo y menu de navegacion -->
     
     <header>
-        <div class="index"></div>
-        <nav>
-            <ul class="menu index_grid">
-                <li><a class="index_link logo_index" href="../index.html"><img id="volver"
-                            src="../favicon/favicon-32x32.png" alt="logo"></a></li>
-                <li class="link conoceme_index"><a class="menu_link" href="../pages/conoceme.html">Conoceme</a></li>
-                <li class="link fotografia_index"><a class="menu_link" href="../pages/fotografia.html">Fotografia</a>
-                </li>
-                <li class="link recomendaciones_index"><a class="menu_link"
-                        href="../pages/recomendaciones.html">Recomendaciones</a></li>
-                <li class="link contacto_index"><a class="menu_link" href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar_contacto">
+            <div class="container-fluid">
+                <a class="navbar-brand index_link logo_index" href="../index.html"><img id="volver"
+                        src="../favicon/favicon-32x32.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item link conoceme_index">
+                            <a class="nav-link menu_link" aria-current="page"
+                                href="../pages/conoceme.html">Conoceme</a>
+                        </li>
+                        <li class="nav-item link fotografia_index">
+                            <a class="nav-link menu_link" href="../pages/fotografia.html">Fotografia</a>
+                        </li>
+                        <li class="nav-item link recomendaciones_index">
+                            <a class="nav-link menu_link" href="../pages/recomendaciones.html">Recomendaciones</a>
+                        </li>
+                        <li class="nav-item link contacto_index">
+                            <a class="nav-link menu_link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- cierre de fila de logo y menu -->

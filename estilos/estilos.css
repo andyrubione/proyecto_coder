@@ -61,10 +61,7 @@ body{
     width:100%;
     overflow-x:hidden;
 }
-body section div.row{
-    margin: 0px;
-    margin-top: 3rem;
-}
+
 .parallax {
     background-image: url(../Imagen/Fondo2.jpg);
     min-height: 800px; 
@@ -73,6 +70,7 @@ body section div.row{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 4rem;
 
 }
 .home {
@@ -135,7 +133,7 @@ header nav ul li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    margin-bottom: 4rem;
 }
 .presentacion2{
     font-family: 'Source Sans Pro', sans-serif;
@@ -171,6 +169,7 @@ section div ul li{
     flex-direction: row;
     align-items: center;
     justify-content:space-evenly;
+    margin-top: 1rem;
 
 }
 footer ul li{
@@ -358,6 +357,10 @@ section h1{
 
 /* CONTACTO */
 
+.navbar_contacto{
+    position: absolute;
+    z-index: 2;
+}
 .imagen_fondo{
     position: absolute;
     background-image: url(../Imagen/back_contacto.jpeg);
