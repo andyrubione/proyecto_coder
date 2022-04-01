@@ -11,6 +11,7 @@ html{
 
 .navbar{
     z-index: 2;
+    width: 100vw;
 }
 a{
     text-decoration: none;
@@ -185,7 +186,11 @@ color: rgba(0, 18, 58, 0.74);
 margin-top: 3rem;
 margin-bottom: 2rem;
 text-align: center;
+<<<<<<< HEAD
 width: 100%;
+=======
+width: 100vw;
+>>>>>>> bootstrap_a_reco
 
 }
 .index{
@@ -301,16 +306,13 @@ section h1{
 
 /* RECOMENDACIONES */
 
-#back_2{
-    background-image: url(../Imagen/meteoro_blanco.svg);
-    background-size: cover;
 
-}
 .img_fondo{
     background-image: url(../Imagen/recomendaciones.jpeg) ;
     min-height: 1000px; 
-    background-attachment: fixed;
-    background-position: left;
+    width: 100vw;
+    background-attachment: fixed ;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 10px;
@@ -319,7 +321,8 @@ section h1{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 25px;
     text-align: center;
-    margin: 3%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     font-weight: 700;
 
 }
@@ -337,7 +340,8 @@ section h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .subtitulo_desc{
     font-size: 20px;
@@ -346,12 +350,19 @@ section h1{
     font-weight: 700;
     display: flex;
     align-items: center;
-    margin: 5%;
+    margin-bottom: 3rem;
 }
 .video{
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
 }
+.video iframe{
+    width: 352px;
+    height: 198px;
+}
+
+
 
 /* CONTACTO */
 
@@ -362,13 +373,12 @@ section h1{
 .imagen_fondo{
     position: absolute;
     background-image: url(../Imagen/back_contacto.jpeg);
-    height: 100vh;  
+    height: 120vh;  
     width:100vw;
     background-position: center;
     background-size: cover ;
     background-repeat: no-repeat;
     z-index: -1;
-
 }
 .contacto{
     font-size: 1rem;
@@ -487,27 +497,17 @@ header nav ul li{
 
 }
 
+
 /* FOTOGRAFIA */
 
 
 
-/* RECOMENDACIONES */
-#back_2{
-        background-image: url(../Imagen/meteoro_blanco.svg);
-        background-size: cover;
-}
 
-.img_fondo{
-        min-height: 800px; 
-        background-position: center;
-        margin-bottom: 2rem;
-}
+/* RECOMENDACIONES */
 
 .titulo_descripcion{
         font-size: 15px;
-        margin: 3%;
         font-weight: 700;
-    
 }
 .sub_titulo{       
         font-size: 45px;
@@ -516,16 +516,16 @@ header nav ul li{
 .subtitulo1{
         font-size: 25px;
         align-items: center;
-        margin: 5%;
 }
 .subtitulo_desc{
     font-size: 15px;
-    margin: 5%;
 }
 .video iframe{
     width: 352px;
     height: 198px;
 }
+
+
 
 /* CONTACTO */
 
@@ -536,6 +536,9 @@ header nav ul li{
     margin-left:-10rem;
 }
 }
+
+
+
 
 @media screen and (max-width: 426px){
 
@@ -569,7 +572,6 @@ header nav ul li{
         min-height: 34rem;
         background-position-y: 25rem;
 } 
-
 /* CONOCEME */
 .titulos{
         font-size: 45px;
@@ -638,14 +640,12 @@ header nav ul li{
         padding: 0 1rem;
 
 }
-
 .presentacion2{
         font-size: 10px;
         margin-top: 2rem;
         margin-bottom: 2rem;
         padding: 0 1rem;
 }
-
 .flex_foot{
         margin: 0rem;
         font-size: 13px;
@@ -711,7 +711,6 @@ header nav ul li{
     margin-bottom: 2rem;
     padding: 0;
 }
-
 .flex_foot{
     margin: 0rem;
     font-size: 13px;
@@ -723,7 +722,6 @@ header nav ul li{
 .titulos{
     font-size: 30px;
     margin-top: 5rem;
-
 } 
 .contacto{
     margin-top: 7rem;
