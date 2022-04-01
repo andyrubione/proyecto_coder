@@ -29,31 +29,6 @@ a{
 .contenedor{
     grid-area: contenedor;
 }
-.index_grid{
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr 4fr 3fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "logo conoceme fotografia recomendaciones contacto";
-    justify-content:space-around;
-    justify-items: center;
-    width: 100vw;
-}
-.logo_index{
-    grid-area: logo;
-}
-.conoceme_index{
-    grid-area:conoceme;
-}
-.fotografia_index{
-    grid-area:fotografia;
-}
-.recomendaciones_index{
-    grid-area:recomendaciones;
-}
-.contacto_index{
-    grid-area:contacto;
-}
 body{
     background-image: url(../Imagen/meteoro_blanco.svg);
     background-size: cover;
@@ -62,7 +37,6 @@ body{
     width:100%;
     overflow-x:hidden;
 }
-
 .parallax {
     background-image: url(../Imagen/Fondo2.jpg);
     min-height: 800px; 
@@ -186,19 +160,9 @@ color: rgba(0, 18, 58, 0.74);
 margin-top: 3rem;
 margin-bottom: 2rem;
 text-align: center;
-<<<<<<< HEAD
-width: 100%;
-=======
 width: 100vw;
->>>>>>> bootstrap_a_reco
+}
 
-}
-.index{
-    right: 2%;
-    display: grid;
-    position: absolute;
-    justify-items: right;
-}
 .index_link{
     color: rgba(0, 18, 58, 0.74);
 }
@@ -209,31 +173,12 @@ section h1{
     position: absolute;
     margin-top: 2rem;
 }
-.grilla_conoceme {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows:max-content;
-    gap: 1em 2em; 
-    grid-template-areas: 
-    "ima1 ima1"
-    "ima2 cono2"
-    "ima3 ima3"; 
-}
-.desc1{
-    grid-area: ima1;
-}
-.desc2{
-    grid-area: cono2;
-}
-.desc3{
-    grid-area: ima3;
-}
+
 .desc1{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    max-width:70% ;
-    margin:30% 15%;
+    max-width:100vw ;
     margin-bottom: 5%;
     text-align: center;
     align-items: flex-end;
@@ -244,17 +189,16 @@ section h1{
     color:rgb(0, 0, 0);
     line-height: 130%;
     z-index: 1;
-    color: whitesmoke;
 }
 .img1{
-    grid-area: ima1;
     background-image: url(../Imagen/Fondo.jpeg) ;
-    max-width: 100vw;
+    max-width: 80vw;
     min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 3rem;
 }
 .desc2{
     font-family: 'Source Sans Pro', sans-serif;
@@ -262,7 +206,7 @@ section h1{
     font-weight: 600;
     color:rgb(0, 0, 0);
     line-height: 130%;
-    max-width: 80%;
+    max-width: 100vw;
     display: flex;
     align-items: center;
     margin-top: 3rem;
@@ -270,12 +214,12 @@ section h1{
 
 }
 .img2{
-    grid-area: ima2;
     background-image: url(../Imagen/Lateral\ del\ texto.jpg) ;
     min-height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    margin-bottom: 3rem;
 }
 .desc3{
     display: flex;
@@ -290,16 +234,15 @@ section h1{
     line-height: 130%;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 4rem;
-    color: whitesmoke;
 }
 .img3{
-    grid-area: ima3;
     background-image: url(../Imagen/Ecoparque.jpg) ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
+    width: 100vw;
+
 }
 
 
@@ -454,13 +397,7 @@ section h1{
 header nav ul li{
         font-size: 15px;
 }
-.index_grid{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly ;
-        justify-items: center;
-}
+
 .parallax {
         min-height: 45rem; 
         background-position-y: 30rem;
