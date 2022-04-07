@@ -1,0 +1,79 @@
+/* ANIMACIONES */
+
+.menu{
+    animation: fadeInDown;
+    animation-duration: 3s;
+}
+.el_turista{
+    animation: fadeInLeft;
+    animation-duration: 3s;
+}
+.presentacion{
+    animation: fadeInUp;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-play-state: scroll;
+}
+.presentacion2{
+    animation: fadeInUp;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-play-state: scroll;
+}
+.titulos{
+    animation:fadeIn;
+    animation-duration: 5s;
+}
+.desc1{
+    animation: fadeInUp;
+    animation-duration: 4s;
+}
+.img2{
+    animation: fadeInLeft;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.desc2{
+    animation: fadeInRight;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.img3{
+    animation: fadeInUp;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+.desc3{
+    animation: fadeInLeft;
+    animation-duration:4s;
+    animation-delay: 4s;
+}
+.p_fotografia{
+    animation: fadeInUp;
+    animation-duration: 4s;
+}
+.titulo_descripcion{
+    animation: fadeInUp;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.sub_titulo{
+    animation: fadeIn;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.subtitulo_desc{
+    animation: fadeInUp;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.sub_titulo1{
+    animation: fadeIn;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.nombre{
+        animation: fadeIn;
+        animation-duration: 10s;
+        animation-delay: 2s;
+}

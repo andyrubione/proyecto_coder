@@ -1,359 +1,259 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0; }
 
-}
-html{
-    font-size: 62,5%;
-}
+html {
+  font-size: 62, 5%; }
 
 /* principio de la pagina, imagen de fondo y menu */
+.navbar {
+  z-index: 2;
+  width: 100vw; }
 
-.navbar{
-    z-index: 2;
-    width: 100vw;
-}
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  max-width: 99vw;
+  grid-template-areas: "contenedor"; }
 
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    max-width: 99vw;
-    grid-template-areas: "contenedor";
-        
-}
-.contenedor{
-    grid-area: contenedor;
-}
-body{
-    background-image: url(../Imagen/meteoro_blanco.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100vw;
-    width:100%;
-    overflow-x:hidden;
-}
+.contenedor {
+  grid-area: contenedor; }
+
+body {
+  background-image: url(../Imagen/meteoro_blanco.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  width: 100%;
+  overflow-x: hidden; }
+
 .parallax {
-    background-image: url(../Imagen/Fondo2.jpg);
-    min-height: 800px; 
-    max-width: 100vw;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 4rem;
+  background-image: url(../Imagen/Fondo2.jpg);
+  min-height: 800px;
+  max-width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4rem; }
 
-}
 .home {
-    position: absolute;
-    transform: translate(10px);
-    top: 10px;
-    text-align: left;
-    left: 10px
-}
-.menu{
-    position:absolute;
-    top:1rem;
-    font-size: 20px;
-}
-.menu_link{
-    color: rgba(0, 18, 58, 0.74);
-}
-header nav ul li { 
-    list-style: none;
-    display: inline-block;
-    font-size: 20px;
-}
-.texto_arriba{
-    position: absolute;
-    top: 4rem;
-    left: 1rem;
-}
-.el_turista{
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-    font-size:150px;
-    font-family: 'Vujahday Script', cursive;
-    font-style:italic;
-    color: #ff8e00;
-    font-weight: 100;
-}
+  position: absolute;
+  transform: translate(10px);
+  top: 10px;
+  text-align: left;
+  left: 10px; }
+
+.menu {
+  position: absolute;
+  top: 1rem;
+  font-size: 20px; }
+
+.menu_link {
+  color: #00123abd; }
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 20px; }
+
+.texto_arriba {
+  position: absolute;
+  top: 4rem;
+  left: 1rem; }
+
+.el_turista {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  font-size: 150px;
+  font-family: 'Vujahday Script', cursive;
+  font-style: italic;
+  color: #ff8e00;
+  font-weight: 100; }
+
+a {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.titulos {
+  font-family: 'Vujahday Script', cursive;
+  font-size: 80px;
+  color: #00123abd;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100vw;
+  position: absolute; }
 
 /* Fin del inicio */
-
 /* comienzo de la presentacion */
+.presentacion {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #00123abd;
+  text-align: center;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
 
-.presentacion{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    color:rgba(0, 18, 58, 0.74);
-    text-align:center;
-    line-height: 130%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
 .parallax2 {
-    background-image: url(../Imagen/PANO_20211026_112913-02-01.jpeg);
-    min-height:800px; 
-    max-width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    margin-bottom: 4rem;
-}
-.presentacion2{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    color:rgba(0, 18, 58, 0.74);
-    text-align:center;
-    line-height: 130%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-section div ul li{
-    list-style: none;
-}
+  background-image: url(../Imagen/PANO_20211026_112913-02-01.jpeg);
+  min-height: 800px;
+  max-width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  margin-bottom: 4rem; }
+
+.presentacion2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #00123abd;
+  text-align: center;
+  line-height: 130%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
 .parallax3 {
-    background-image: url(../Imagen/carancho.jpeg);
-    min-height: 700px;
-    max-width: 100vw; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+  background-image: url(../Imagen/carancho.jpeg);
+  min-height: 700px;
+  max-width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 /* Fin de la presentacion */
-
 /* comienzo del footer */
-.flex_foot{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-evenly;
-    margin-top: 1rem;
-    z-index: 1;
-}
-footer ul li{
-    list-style: none;
-}
+.flex_foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  z-index: 1; }
 
-/* CONOCEME */
+footer ul li {
+  list-style: none; }
 
-.titulos{
-font-family: 'Vujahday Script', cursive;
-font-size: 80px;
-color: rgba(0, 18, 58, 0.74);
-margin-top: 3rem;
-margin-bottom: 2rem;
-text-align: center;
-width: 100vw;
-}
-
-.index_link{
-    color: rgba(0, 18, 58, 0.74);
-}
-section h1{
-    font-family: 'Vujahday Script', cursive;
-    font-size: 80px;
-    color: rgba(0, 18, 58, 0.74);
-    position: absolute;
-    margin-top: 2rem;
-}
-
-.desc1{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    max-width:100vw ;
-    margin-bottom: 5%;
-    text-align: center;
-    align-items: flex-end;
-    justify-content: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2vw;
-    font-weight: 600;
-    color:rgb(0, 0, 0);
-    line-height: 130%;
-    z-index: 1;
-}
-.img1{
-    background-image: url(../Imagen/Fondo.jpeg) ;
-    max-width: 80vw;
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 3rem;
-}
-.desc2{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2vw;
-    font-weight: 600;
-    color:rgb(0, 0, 0);
-    line-height: 130%;
-    max-width: 100vw;
-    display: flex;
-    align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-
-}
-.img2{
-    background-image: url(../Imagen/Lateral\ del\ texto.jpg) ;
-    min-height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 3rem;
-}
-.desc3{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    max-width: 40%;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2vw;
-    font-weight: 600;
-    color:rgb(0, 0, 0);
-    line-height: 130%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-.img3{
-    background-image: url(../Imagen/Ecoparque.jpg) ;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-    width: 100vw;
-
-}
-
-
-
-/* RECOMENDACIONES */
-
-
-.img_fondo{
-    background-image: url(../Imagen/recomendaciones.jpeg) ;
-    min-height: 1000px; 
-    width: 100vw;
-    background-attachment: fixed ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 10px;
-}
-.titulo_descripcion{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    font-weight: 700;
-
-}
-.sub_titulo{       
-    font-family: 'Vujahday Script', cursive;
-    font-size: 70px;
-    color: #b16100;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5%;    
-}
-.subtitulo1{
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-.subtitulo_desc{
-    font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-.video{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
-}
-.video iframe{
-    width: 352px;
-    height: 198px;
-}
-
-
-
-/* CONTACTO */
-
-.navbar_contacto{
-    position: absolute;
-    z-index: 2;
-}
-.imagen_fondo{
-    position: absolute;
-    background-image: url(../Imagen/back_contacto.jpeg);
-    height: 120vh;  
-    width:100vw;
-    background-position: center;
-    background-size: cover ;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
-.contacto{
-    font-size: 1rem;
-    color: #ff8e00;
-    margin-top: 9rem;
-}
-.contacto_cuadros{
-    opacity: 0.8;
-    color: #ff8e00;
-}
-.ubicacion{
-    margin-top: 5rem;
-}
 /* FOTOGRAFIA */
+.p_fotografia {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: 700;
+  max-width: 100%;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00123abd;
+  margin-top: 10rem; }
 
-.p_fotografia{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    font-weight: 700;
-    max-width: 100%;
-    margin-bottom: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
+html {
+  font-size: 62, 5%; }
 
+/* principio de la pagina, imagen de fondo y menu */
+.navbar {
+  z-index: 2;
+  width: 100vw; }
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  max-width: 99vw;
+  grid-template-areas: "contenedor"; }
+
+.contenedor {
+  grid-area: contenedor; }
+
+body {
+  background-image: url(../Imagen/meteoro_blanco.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  width: 100%;
+  overflow-x: hidden; }
+
+.parallax {
+  background-image: url(../Imagen/Fondo2.jpg);
+  min-height: 800px;
+  max-width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4rem; }
+
+.home {
+  position: absolute;
+  transform: translate(10px);
+  top: 10px;
+  text-align: left;
+  left: 10px; }
+
+.menu {
+  position: absolute;
+  top: 1rem;
+  font-size: 20px; }
+
+.menu_link {
+  color: #00123abd; }
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 20px; }
+
+.texto_arriba {
+  position: absolute;
+  top: 4rem;
+  left: 1rem; }
+
+.el_turista {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  font-size: 150px;
+  font-family: 'Vujahday Script', cursive;
+  font-style: italic;
+  color: #ff8e00;
+  font-weight: 100; }
+
+a {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.titulos {
+  font-family: 'Vujahday Script', cursive;
+  font-size: 80px;
+  color: #00123abd;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100vw;
+  position: absolute; }
+
+/* Fin del inicio */
 /* MEDIA */
-
-@media screen and ( max-width: 656px){
-
-    /* INDEX */
-
-.grill_tit{
-    display:grid;
+@media screen and (max-width: 656px) {
+  /* INDEX */
+  .grill_tit {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "grill";
@@ -361,121 +261,82 @@ section h1{
     padding-left: 0;
     margin-left: 0;
     justify-content: center;
+    justify-items: center; }
+  .el_turista {
+    font-size: 100px;
+    align-items: center;
+    padding-left: 0rem; }
+  section h1 {
+    margin-top: 0rem; }
+  .back_turista {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    opacity: 0.8;
+    background-color: whitesmoke;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    z-index: -1;
+    margin-left: 1.5rem; }
+  .texto_arriba {
+    display: flex;
     justify-items: center;
-}
-.el_turista{
-        font-size:100px;
-        align-items: center;
-        padding-left: 0rem;
-}
-section h1{
-        margin-top: 0rem;
-}
-.back_turista{
-        position: absolute;
-        width: 20rem;
-        height: 20rem;
-        opacity: 0.8;
-        background-color: whitesmoke;
-        border-top-left-radius: 100%;
-        border-top-right-radius: 100%;
-        border-bottom-right-radius: 100%;
-        border-bottom-left-radius: 100%;
-        z-index: -1;
-        margin-left: 1.5rem;
-}
-.texto_arriba{
-        display: flex;
-        justify-items: center;
-        top: 6rem;
-        
-}
-header nav ul li{
-        font-size: 15px;
-}
-
-.parallax {
-        min-height: 45rem; 
-        background-position-y: 30rem;
-        background-size: contain;
-        background-attachment:local ;
-}
-.presentacion {
-        font-size: 15px;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-}
-.parallax2{
-        min-height: 10rem;
-        max-width: 100%;
-
-}
-.presentacion2{
-        font-size: 15px;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-}
-.parallax3{
-        min-height: 10rem;
-        background-position-y: 0rem;
-        background-size: contain;
-        background-attachment: local;
-}
-
-/* CONOCEME */
-
-.titulos{
-        font-size: 60px;
-        margin-top: 4rem;
-
-}
-
-
-/* FOTOGRAFIA */
-
-
-
-
-/* RECOMENDACIONES */
-
-.titulo_descripcion{
-        font-size: 15px;
-        font-weight: 700;
-}
-.sub_titulo{       
-        font-size: 45px;
-        margin-bottom: 5%;    
-}
-.subtitulo1{
-        font-size: 25px;
-        align-items: center;
-}
-.subtitulo_desc{
+    top: 6rem; }
+  header nav ul li {
+    font-size: 15px; }
+  .parallax {
+    min-height: 45rem;
+    background-position-y: 30rem;
+    background-size: contain;
+    background-attachment: local; }
+  .presentacion {
     font-size: 15px;
-}
-.video iframe{
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .parallax2 {
+    min-height: 10rem;
+    max-width: 100%; }
+  .presentacion2 {
+    font-size: 15px;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .parallax3 {
+    min-height: 10rem;
+    background-position-y: 0rem;
+    background-size: contain;
+    background-attachment: local; }
+  /* CONOCEME */
+  .titulos {
+    font-size: 60px;
+    margin-top: 4rem; }
+  /* RECOMENDACIONES */
+  .titulo_descripcion {
+    font-size: 15px;
+    font-weight: 700; }
+  .sub_titulo {
+    font-size: 45px;
+    margin-bottom: 5%; }
+  .subtitulo1 {
+    font-size: 25px;
+    align-items: center; }
+  .subtitulo_desc {
+    font-size: 15px; }
+  .video iframe {
     width: 352px;
-    height: 198px;
-}
-
-
-
-/* CONTACTO */
-
-.contacto{
+    height: 198px; }
+  /* CONTACTO */
+  .contacto {
     top: 7rem;
     width: 20rem;
-    left:50%;
-    margin-left:-10rem;
-}
-}
+    left: 50%;
+    margin-left: -10rem; } }
 
-@media screen and (max-width: 426px){
-
-/* INDEX */
-
-.grill_tit{
-    display:grid;
+@media screen and (max-width: 426px) {
+  /* INDEX */
+  .grill_tit {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "grill";
@@ -483,52 +344,37 @@ header nav ul li{
     padding-left: 0;
     margin-left: 1rem;
     justify-content: center;
-    justify-items: center;
-}
-.el_turista{
-        font-size: 75px;
-        padding-top: 1rem;
-        padding-left: 0;
-}
-.back_turista{
-        width: 15rem;
-        height: 15rem;
-        margin-top: 1rem;
-}
-.presentacion{
-        font-size: 10px;
-}
-.parallax {
-        min-height: 34rem;
-        background-position-y: 25rem;
-} 
-/* CONOCEME */
-.titulos{
-        font-size: 45px;
-        margin-top: 3rem;
-
-}
-.contacto{
-    margin-top: 6rem;
-}
-.imagen_fondo{
-    height: 120vh; 
-}
-/* FOTOGRAFIA */
-
-/* RECOMENDACIONES */
-.video iframe{
+    justify-items: center; }
+  .el_turista {
+    font-size: 75px;
+    padding-top: 1rem;
+    padding-left: 0; }
+  .back_turista {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 1rem; }
+  .presentacion {
+    font-size: 10px; }
+  .parallax {
+    min-height: 34rem;
+    background-position-y: 25rem; }
+  /* CONOCEME */
+  .titulos {
+    font-size: 45px;
+    margin-top: 3rem; }
+  .contacto {
+    margin-top: 6rem; }
+  .imagen_fondo {
+    height: 120vh; }
+  /* RECOMENDACIONES */
+  .video iframe {
     width: 256px;
-    height: 144px;
-}
-}
+    height: 144px; } }
 
-@media screen and (max-width: 350px){
-
-/* INDEX */
-
-.grill_tit{
-    display:grid;
+@media screen and (max-width: 350px) {
+  /* INDEX */
+  .grill_tit {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "grill";
@@ -536,219 +382,240 @@ header nav ul li{
     padding-left: 0;
     margin-left: 0rem;
     justify-content: center;
-    justify-items: center;
-}
-.el_turista{
-        font-size:50px;
-        padding-left: 0;
-        padding-top: 0.5rem;
-}
-.back_turista{
-        width: 10rem;
-        height: 10rem;
-        margin-top: 0.1rem;
-}
-.texto_arriba{
-        display: flex;
-        justify-items: center;
-        top: 4rem;
-}
-header nav ul li{
-        font-size: 15px;
-}
-.index_grid{
-        font-size: 13px;
-}
-.parallax {
-        min-height: 25rem; 
-        background-position-y: 15rem;
-}
-.presentacion {
-        font-size: 10px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: 0 1rem;
-
-}
-.presentacion2{
-        font-size: 10px;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        padding: 0 1rem;
-}
-.flex_foot{
-        margin: 0rem;
-        font-size: 13px;
-}
-
-
-/* CONOCEME */
-
-.titulos{
-        font-size: 40px;
-        margin-top: 4rem;
-
-} 
-
-/* FOTOGRAFIA */
-
-
-
-}
-
-@media screen and (max-width:328px){
-
-/* INDEX */
-
-.el_turista{
-    font-size:50px;
-    padding-left: 0rem;
-    padding-top: 0.5rem;
-}
-.back_turista{
+    justify-items: center; }
+  .el_turista {
+    font-size: 50px;
+    padding-left: 0;
+    padding-top: 0.5rem; }
+  .back_turista {
     width: 10rem;
     height: 10rem;
-    margin-top: 0.1rem;
-}
-.texto_arriba{
+    margin-top: 0.1rem; }
+  .texto_arriba {
     display: flex;
     justify-items: center;
-    top: 4rem;
-}
-header nav ul li{
-    font-size: 15px;
-}
-.index_grid{
-    font-size: 13px;
-}
-.parallax {
-    min-height: 25rem; 
-    background-position-y: 15rem;
-}
-.presentacion {
+    top: 4rem; }
+  header nav ul li {
+    font-size: 15px; }
+  .index_grid {
+    font-size: 13px; }
+  .parallax {
+    min-height: 25rem;
+    background-position-y: 15rem; }
+  .presentacion {
     font-size: 10px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 0 1rem;
-
-}
-.parallax2{
-    min-height: 7rem;
-}
-.presentacion2{
+    padding: 0 1rem; }
+  .presentacion2 {
     font-size: 10px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: 0;
-}
-.flex_foot{
+    padding: 0 1rem; }
+  .flex_foot {
     margin: 0rem;
-    font-size: 13px;
-}
+    font-size: 13px; }
+  /* CONOCEME */
+  .titulos {
+    font-size: 40px;
+    margin-top: 4rem; } }
 
-
-/* CONOCEME */
-
-.titulos{
+@media screen and (max-width: 328px) {
+  /* INDEX */
+  .el_turista {
+    font-size: 50px;
+    padding-left: 0rem;
+    padding-top: 0.5rem; }
+  .back_turista {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 0.1rem; }
+  .texto_arriba {
+    display: flex;
+    justify-items: center;
+    top: 4rem; }
+  header nav ul li {
+    font-size: 15px; }
+  .index_grid {
+    font-size: 13px; }
+  .parallax {
+    min-height: 25rem;
+    background-position-y: 15rem; }
+  .presentacion {
+    font-size: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem; }
+  .parallax2 {
+    min-height: 7rem; }
+  .presentacion2 {
+    font-size: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0; }
+  .flex_foot {
+    margin: 0rem;
+    font-size: 13px; }
+  /* CONOCEME */
+  .titulos {
     font-size: 30px;
-    margin-top: 5rem;
-} 
-.contacto{
-    margin-top: 7rem;
-}
-/* FOTOGRAFIA */
-
-.p_fotografia{
+    margin-top: 5rem; }
+  .contacto {
+    margin-top: 7rem; }
+  /* FOTOGRAFIA */
+  .p_fotografia {
     font-size: 15px;
     font-weight: 700;
-    margin-bottom: 2rem;
-}
+    margin-bottom: 2rem; } }
 
-}
+/* RECOMENDACIONES */
+.img_fondo {
+  background-image: url(../Imagen/recomendaciones.jpeg);
+  min-height: 1000px;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px; }
 
-#a{
-    text-decoration: none;
-    color:#ff8e00;
-    font-family: 'Source Sans Pro', sans-serif;
-}
+.titulo_descripcion {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: #00123abd; }
 
-/* ANIMACIONES */
+.sub_titulo {
+  font-family: 'Vujahday Script', cursive;
+  font-size: 5vw;
+  color: #ff8e00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%; }
 
-.menu{
-    animation: fadeInDown;
-    animation-duration: 3s;
-}
-.el_turista{
-    animation: fadeInLeft;
-    animation-duration: 3s;
-}
-.presentacion{
-    animation: fadeInUp;
-    animation-duration: 6s;
-    animation-delay: 2s;
-    animation-play-state: scroll;
-}
-.presentacion2{
-    animation: fadeInUp;
-    animation-duration: 6s;
-    animation-delay: 1s;
-    animation-play-state: scroll;
-}
-.titulos{
-    animation:fadeIn;
-    animation-duration: 5s;
-}
-.desc1{
-    animation: fadeInUp;
-    animation-duration: 4s;
-}
-.img2{
-    animation: fadeInLeft;
-    animation-duration: 3s;
-    animation-delay: 2s;
-}
-.desc2{
-    animation: fadeInRight;
-    animation-duration: 3s;
-    animation-delay: 2s;
-}
-.img3{
-    animation: fadeInUp;
-    animation-duration: 4s;
-    animation-delay: 4s;
-}
-.desc3{
-    animation: fadeInLeft;
-    animation-duration:4s;
-    animation-delay: 4s;
-}
-.p_fotografia{
-    animation: fadeInUp;
-    animation-duration: 4s;
-}
-.titulo_descripcion{
-    animation: fadeInUp;
-    animation-duration: 4s;
-    animation-delay: 2s;
-}
-.sub_titulo{
-    animation: fadeIn;
-    animation-duration: 4s;
-    animation-delay: 2s;
-}
-.subtitulo_desc{
-    animation: fadeInUp;
-    animation-duration: 4s;
-    animation-delay: 2s;
-}
-.sub_titulo1{
-    animation: fadeIn;
-    animation-duration: 4s;
-    animation-delay: 2s;
-}
-.nombre{
-        animation: fadeIn;
-        animation-duration: 10s;
-        animation-delay: 2s;
-}
+.subtitulo1 {
+  font-size: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
+.subtitulo_desc {
+  font-size: 2vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  color: #00123abd; }
+
+.video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem; }
+
+.video iframe {
+  width: 352px;
+  height: 198px; }
+
+/* CONOCEME */
+.index_link {
+  color: #00123abd; }
+
+.img1 {
+  background-image: url(../Imagen/Fondo.jpeg);
+  max-width: 80vw;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem; }
+
+.desc1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 100vw;
+  margin-bottom: 5%;
+  text-align: center;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  color: #00123abd;
+  line-height: 130%;
+  z-index: 1; }
+
+.img2 {
+  background-image: url(../Imagen/Lateral_del_texto.jpg);
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 3rem; }
+
+.desc2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  color: #00123abd;
+  line-height: 130%;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.desc3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: 40%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  color: #00123abd;
+  line-height: 130%;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.img3 {
+  background-image: url(../Imagen/Ecoparque.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100vw; }
+
+/* CONTACTO */
+.navbar_contacto {
+  position: absolute;
+  z-index: 2; }
+
+.imagen_fondo {
+  position: absolute;
+  background-image: url(../Imagen/back_contacto.jpeg);
+  height: 120vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1; }
+
+.contacto {
+  font-size: 1rem;
+  color: #ff8e00;
+  margin-top: 9rem; }
+
+.contacto_cuadros {
+  opacity: 0.8;
+  color: #ff8e00; }

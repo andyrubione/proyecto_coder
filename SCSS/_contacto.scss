@@ -1,0 +1,26 @@
+
+/* CONTACTO */
+
+.navbar_contacto{
+    position: absolute;
+    z-index: 2;
+}
+.imagen_fondo{
+    position: absolute;
+    background-image: url(../Imagen/back_contacto.jpeg);
+    height: 120vh;  
+    width:100vw;
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.contacto{
+    font-size: 1rem;
+    color: $color-orange;
+    margin-top: 9rem;
+}
+.contacto_cuadros{
+    opacity: 0.8;
+    color: $color-orange;
+}

@@ -1,0 +1,75 @@
+/* CONOCEME */
+
+.index_link {
+    color: $color-blue
+}
+.img1 {
+    background-image: url(../Imagen/Fondo.jpeg);
+    max-width: 80vw;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3rem;
+}
+.desc1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 100vw;
+    margin-bottom: 5%;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    color: $color-blue;
+    line-height: 130%;
+    z-index: 1;
+}
+.img2 {
+    background-image: url(../Imagen/Lateral_del_texto.jpg);
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 3rem;
+}
+.desc2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    color:$color-blue;
+    line-height: 130%;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+.desc3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 40%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    color: $color-blue;
+    line-height: 130%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.img3 {
+    background-image: url(../Imagen/Ecoparque.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 100vw;
+
+}
