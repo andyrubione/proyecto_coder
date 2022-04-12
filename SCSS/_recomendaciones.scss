@@ -1,16 +1,17 @@
 /* RECOMENDACIONES */
 
-.img_fondo{
-    background-image: url(../Imagen/recomendaciones.jpeg) ;
-    min-height: 1000px; 
+.img_fondo {
+    background-image: url(../Imagen/recomendaciones.jpeg);
+    min-height: 1000px;
     width: 100vw;
-    background-attachment: fixed ;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 10px;
 }
-.titulo_descripcion{
+
+.titulo_descripcion {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2vw;
     text-align: center;
@@ -20,16 +21,18 @@
     color: $color-blue;
 
 }
-.sub_titulo{       
+
+.sub_titulo {
     font-family: 'Vujahday Script', cursive;
     font-size: 5vw;
     color: $color-orange;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5%;    
+    margin-bottom: 5%;
 }
-.subtitulo1{
+
+.subtitulo1 {
     font-size: 3vw;
     display: flex;
     flex-direction: column;
@@ -37,7 +40,8 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-.subtitulo_desc{
+
+.subtitulo_desc {
     font-size: 2vw;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
@@ -47,13 +51,70 @@
     margin-bottom: 3rem;
     color: $color-blue;
 }
-.video{
+
+.video {
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
 }
-.video iframe{
+
+.video iframe {
     width: 352px;
     height: 198px;
 }
 
+$reco: (EnriqueAlex: rgb(219, 0, 0),
+    Alanxelmundo: red,
+    Booking: brown,
+    Couchsurfing: orange,
+);
+
+@each $red,
+$color in $reco {
+    .btn--#{$red} {
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 2rem;
+    margin: 1em 0.8em;
+    }
+}
+
+.type1 {
+    color: black;
+}
+.type1::after,
+.type1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+}
+.type1::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: black;
+    border-right-color: black;
+}
+.type1::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: orange;
+    border-left-color: orange;
+}
+.type1:hover:after,
+.type1:hover:before {
+    width: 100%;
+    height: 100%;
+}

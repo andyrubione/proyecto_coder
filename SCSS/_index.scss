@@ -13,6 +13,7 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
+
 .parallax2 {
     background-image: url(../Imagen/PANO_20211026_112913-02-01.jpeg);
     min-height: 800px;
@@ -23,6 +24,7 @@
     margin: 0;
     margin-bottom: 4rem;
 }
+
 .presentacion2 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 28px;
@@ -37,6 +39,7 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
+
 .parallax3 {
     background-image: url(../Imagen/carancho.jpeg);
     min-height: 700px;
@@ -47,3 +50,68 @@
 }
 
 /* Fin de la presentacion */
+
+.grid_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em 1em;
+    grid-template-areas:
+        "Foto1 Foto2"
+        "Foto3 Foto4";
+    max-width: 100vw;
+
+}
+.imgHover1 {
+    grid-area: Foto1;
+}
+.imgHover2 {
+    grid-area: Foto2;
+}
+.imgHover3 {
+    grid-area: Foto3;
+}
+.imgHover4 {
+    grid-area: Foto4;
+}
+
+.HoverFoto {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    max-width: 45vw;
+    position: relative;
+    cursor: pointer;
+}
+
+.HoverFoto img {
+    background-size: contain;
+    width: 45vw;
+    initheight: 45vh;
+    background-position: center;
+
+}
+
+.HoverFoto a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 40px;
+    height: 0px;
+    position: absolute;
+    transition: 0.5s ease all;
+    visibility: hidden;
+    opacity: 0;
+    bottom: 3px;
+}
+
+.HoverFoto:hover a {
+    background-color: rgba(255, 255, 255, 0.4);
+    visibility: visible;
+    height: fit-content;
+    padding: 3rem 0;
+    opacity: 1;
+}

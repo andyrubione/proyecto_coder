@@ -6,20 +6,6 @@ html {
   font-size: 62, 5%; }
 
 /* principio de la pagina, imagen de fondo y menu */
-.navbar {
-  z-index: 2;
-  width: 100vw; }
-
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  max-width: 99vw;
-  grid-template-areas: "contenedor"; }
-
-.contenedor {
-  grid-area: contenedor; }
-
 body {
   background-image: url(../Imagen/meteoro_blanco.svg);
   background-size: cover;
@@ -27,6 +13,13 @@ body {
   max-width: 100vw;
   width: 100%;
   overflow-x: hidden; }
+  body .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    max-width: 99vw;
+    grid-template-areas: "contenedor";
+    grid-area: contenedor; }
 
 .parallax {
   background-image: url(../Imagen/Fondo2.jpg);
@@ -52,6 +45,10 @@ body {
 
 .menu_link {
   color: #00123abd; }
+
+header nav .navbar {
+  z-index: 2;
+  width: 100vw; }
 
 header nav ul li {
   list-style: none;
@@ -134,6 +131,62 @@ a {
   background-size: cover; }
 
 /* Fin de la presentacion */
+.grid_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em 1em;
+  grid-template-areas: "Foto1 Foto2" "Foto3 Foto4";
+  max-width: 100vw; }
+
+.imgHover1 {
+  grid-area: Foto1; }
+
+.imgHover2 {
+  grid-area: Foto2; }
+
+.imgHover3 {
+  grid-area: Foto3; }
+
+.imgHover4 {
+  grid-area: Foto4; }
+
+.HoverFoto {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 45vw;
+  position: relative;
+  cursor: pointer; }
+
+.HoverFoto img {
+  background-size: contain;
+  width: 45vw;
+  initheight: 45vh;
+  background-position: center; }
+
+.HoverFoto a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 40px;
+  height: 0px;
+  position: absolute;
+  transition: 0.5s ease all;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 3px; }
+
+.HoverFoto:hover a {
+  background-color: rgba(255, 255, 255, 0.4);
+  visibility: visible;
+  height: fit-content;
+  padding: 3rem 0;
+  opacity: 1; }
+
 /* comienzo del footer */
 .flex_foot {
   display: flex;
@@ -168,20 +221,6 @@ html {
   font-size: 62, 5%; }
 
 /* principio de la pagina, imagen de fondo y menu */
-.navbar {
-  z-index: 2;
-  width: 100vw; }
-
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  max-width: 99vw;
-  grid-template-areas: "contenedor"; }
-
-.contenedor {
-  grid-area: contenedor; }
-
 body {
   background-image: url(../Imagen/meteoro_blanco.svg);
   background-size: cover;
@@ -189,6 +228,13 @@ body {
   max-width: 100vw;
   width: 100%;
   overflow-x: hidden; }
+  body .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    max-width: 99vw;
+    grid-template-areas: "contenedor";
+    grid-area: contenedor; }
 
 .parallax {
   background-image: url(../Imagen/Fondo2.jpg);
@@ -214,6 +260,10 @@ body {
 
 .menu_link {
   color: #00123abd; }
+
+header nav .navbar {
+  z-index: 2;
+  width: 100vw; }
 
 header nav ul li {
   list-style: none;
@@ -523,6 +573,81 @@ a {
 .video iframe {
   width: 352px;
   height: 198px; }
+
+.btn--EnriqueAlex {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 2rem;
+  margin: 1em 0.8em; }
+
+.btn--Alanxelmundo {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 2rem;
+  margin: 1em 0.8em; }
+
+.btn--Booking {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 2rem;
+  margin: 1em 0.8em; }
+
+.btn--Couchsurfing {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 2rem;
+  margin: 1em 0.8em; }
+
+.type1 {
+  color: black; }
+
+.type1::after,
+.type1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px; }
+
+.type1::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: black;
+  border-right-color: black; }
+
+.type1::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: orange;
+  border-left-color: orange; }
+
+.type1:hover:after,
+.type1:hover:before {
+  width: 100%;
+  height: 100%; }
 
 /* CONOCEME */
 .index_link {
