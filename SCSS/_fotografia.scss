@@ -1,15 +1,21 @@
 /* FOTOGRAFIA */
 
 .p_fotografia{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2vw;
-    text-align: center;
-    font-weight: 700;
-    max-width: 100%;
-    margin-bottom: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: $color-blue;
-    margin-top: 10rem;
+    @include texto;
+    font-family:map-get($texto,font-family),sans-serif;
+    text-align: map-get($texto,text-align);
+    max-width: map-get($texto,max-width);
+    margin-bottom:map-get($texto,margin-bottom);
+    display: map-get($texto,display);
+    flex-direction: map-get($texto,flex-direction);
+    align-items: map-get($texto,align-items);
+    color: map-get($texto,color);
+    margin-top: map-get($texto,margin-top);
 }
+
+
+
+
+
+
+

@@ -5,9 +5,8 @@
 html {
   font-size: 62, 5%; }
 
-/* principio de la pagina, imagen de fondo y menu */
 body {
-  background-image: url(../Imagen/meteoro_blanco.svg);
+  background-color: whitesmoke;
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100vw;
@@ -55,12 +54,12 @@ header nav ul li {
   display: inline-block;
   font-size: 20px; }
 
-.texto_arriba {
+section .texto_arriba {
   position: absolute;
   top: 4rem;
   left: 1rem; }
 
-.el_turista {
+section .el_turista {
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
@@ -83,12 +82,11 @@ a {
   width: 100vw;
   position: absolute; }
 
-/* Fin del inicio */
-/* comienzo de la presentacion */
-.presentacion {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 28px;
-  font-weight: 600;
+.presentacion, .presentacion2 {
+  font-family: 'Source Sans Pro';
+  font-size: 2vw;
+  font-weight: lighter;
+  font-family: "Source Sans Pro", sans-serif;
   color: #00123abd;
   text-align: center;
   line-height: 130%;
@@ -109,13 +107,7 @@ a {
   margin-bottom: 4rem; }
 
 .presentacion2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 28px;
-  font-weight: 600;
-  color: #00123abd;
-  text-align: center;
   line-height: 130%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
@@ -130,7 +122,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* Fin de la presentacion */
 .grid_menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -162,7 +153,7 @@ a {
 .HoverFoto img {
   background-size: contain;
   width: 45vw;
-  initheight: 45vh;
+  height: 45vh;
   background-position: center; }
 
 .HoverFoto a {
@@ -201,11 +192,12 @@ footer ul li {
 
 /* FOTOGRAFIA */
 .p_fotografia {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro';
   font-size: 2vw;
+  font-weight: lighter;
+  font-family: "Source Sans Pro", sans-serif;
   text-align: center;
-  font-weight: 700;
-  max-width: 100%;
+  max-width: 100vw;
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
@@ -220,9 +212,8 @@ footer ul li {
 html {
   font-size: 62, 5%; }
 
-/* principio de la pagina, imagen de fondo y menu */
 body {
-  background-image: url(../Imagen/meteoro_blanco.svg);
+  background-color: whitesmoke;
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100vw;
@@ -270,12 +261,12 @@ header nav ul li {
   display: inline-block;
   font-size: 20px; }
 
-.texto_arriba {
+section .texto_arriba {
   position: absolute;
   top: 4rem;
   left: 1rem; }
 
-.el_turista {
+section .el_turista {
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
@@ -298,7 +289,6 @@ a {
   width: 100vw;
   position: absolute; }
 
-/* Fin del inicio */
 /* MEDIA */
 @media screen and (max-width: 656px) {
   /* INDEX */
@@ -341,7 +331,7 @@ a {
     background-position-y: 30rem;
     background-size: contain;
     background-attachment: local; }
-  .presentacion {
+  .presentacion, .presentacion2 {
     font-size: 15px;
     margin-top: 2rem;
     margin-bottom: 2rem; }
@@ -403,7 +393,7 @@ a {
     width: 15rem;
     height: 15rem;
     margin-top: 1rem; }
-  .presentacion {
+  .presentacion, .presentacion2 {
     font-size: 10px; }
   .parallax {
     min-height: 34rem;
@@ -452,7 +442,7 @@ a {
   .parallax {
     min-height: 25rem;
     background-position-y: 15rem; }
-  .presentacion {
+  .presentacion, .presentacion2 {
     font-size: 10px;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -491,7 +481,7 @@ a {
   .parallax {
     min-height: 25rem;
     background-position-y: 15rem; }
-  .presentacion {
+  .presentacion, .presentacion2 {
     font-size: 10px;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -530,12 +520,13 @@ a {
   margin-bottom: 10px; }
 
 .titulo_descripcion {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro';
   font-size: 2vw;
+  font-weight: lighter;
+  font-family: "Source Sans Pro", sans-serif;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  font-weight: 700;
   color: #00123abd; }
 
 .sub_titulo {
@@ -556,10 +547,11 @@ a {
   margin-bottom: 3rem; }
 
 .subtitulo_desc {
+  font-family: 'Source Sans Pro';
   font-size: 2vw;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  font-family: "Source Sans Pro", sans-serif;
   text-align: center;
-  font-weight: 700;
   display: flex;
   align-items: center;
   margin-bottom: 3rem;
@@ -663,20 +655,19 @@ a {
   background-size: cover;
   margin-bottom: 3rem; }
 
-.desc1 {
+.desc1, .desc2, .desc3 {
+  font-family: 'Source Sans Pro';
+  font-size: 2vw;
+  font-weight: lighter;
+  text-align: center;
+  max-width: 100vw;
   display: flex;
+  color: #00123abd;
   flex-direction: row;
   flex-wrap: nowrap;
-  max-width: 100vw;
   margin-bottom: 5%;
-  text-align: center;
   align-items: flex-end;
   justify-content: center;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2vw;
-  font-weight: 600;
-  color: #00123abd;
-  line-height: 130%;
   z-index: 1; }
 
 .img2 {
@@ -688,27 +679,16 @@ a {
   margin-bottom: 3rem; }
 
 .desc2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2vw;
-  font-weight: 600;
-  color: #00123abd;
   line-height: 130%;
-  max-width: 100vw;
-  display: flex;
   align-items: center;
   margin-top: 3rem;
   margin-bottom: 3rem; }
 
 .desc3 {
-  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   max-width: 40%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2vw;
-  font-weight: 600;
-  color: #00123abd;
   line-height: 130%;
   margin-top: 3rem;
   margin-bottom: 3rem; }

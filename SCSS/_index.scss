@@ -1,14 +1,12 @@
-/* comienzo de la presentacion */
 
 .presentacion {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    color: $color-blue;
-    text-align: center;
+    @include texto;
+    font-family:map-get($texto,font-family),sans-serif;
+    color: map-get($texto,color);
+    text-align: map-get($texto,text-align);
     line-height: 130%;
-    display: flex;
-    align-items: center;
+    display: map-get($texto,display);
+    align-items: map-get($texto,align-items);
     align-content: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -24,15 +22,9 @@
     margin: 0;
     margin-bottom: 4rem;
 }
-
 .presentacion2 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    color: $color-blue;
-    text-align: center;
+    @extend .presentacion;
     line-height: 130%;
-    display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -48,8 +40,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* Fin de la presentacion */
 
 .grid_menu {
     display: grid;
@@ -83,15 +73,12 @@
     position: relative;
     cursor: pointer;
 }
-
 .HoverFoto img {
     background-size: contain;
     width: 45vw;
-    initheight: 45vh;
+    height: 45vh;
     background-position: center;
-
 }
-
 .HoverFoto a {
     text-decoration: none;
     color: #fff;
@@ -107,7 +94,6 @@
     opacity: 0;
     bottom: 3px;
 }
-
 .HoverFoto:hover a {
     background-color: rgba(255, 255, 255, 0.4);
     visibility: visible;

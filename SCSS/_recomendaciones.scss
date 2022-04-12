@@ -12,13 +12,12 @@
 }
 
 .titulo_descripcion {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2vw;
-    text-align: center;
+    @include texto;
+    font-family:map-get($texto,font-family),sans-serif;
+    text-align: map-get($texto,text-align);
     margin-top: 3rem;
-    margin-bottom: 3rem;
-    font-weight: 700;
-    color: $color-blue;
+    margin-bottom:map-get($texto,margin-bottom);
+    color: map-get($texto,color);
 
 }
 
@@ -42,14 +41,13 @@
 }
 
 .subtitulo_desc {
-    font-size: 2vw;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
-    color: $color-blue;
+    @include texto;
+    font-family:map-get($texto,font-family),sans-serif;
+    text-align: map-get($texto,text-align);
+    display: map-get($texto,display);
+    align-items: map-get($texto,align-items);
+    margin-bottom:map-get($texto,margin-bottom);
+    color: map-get($texto,color);
 }
 
 .video {
