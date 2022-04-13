@@ -1,64 +1,67 @@
 /* RECOMENDACIONES */
 
-.img_fondo {
-    background-image: url(../Imagen/recomendaciones.jpeg);
-    min-height: 1000px;
-    width: 100vw;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 10px;
+section {
+    .img_fondo {
+        background-image: url(../Imagen/recomendaciones.jpeg);
+        min-height: 1000px;
+        width: 100vw;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+
+    .titulo_descripcion {
+        @include texto;
+        font-family: map-get($texto, font-family), sans-serif;
+        text-align: map-get($texto, text-align);
+        margin-top: 3rem;
+        margin-bottom: map-get($texto, margin-bottom);
+        color: map-get($texto, color);
+    }
 }
 
-.titulo_descripcion {
-    @include texto;
-    font-family:map-get($texto,font-family),sans-serif;
-    text-align: map-get($texto,text-align);
-    margin-top: 3rem;
-    margin-bottom:map-get($texto,margin-bottom);
-    color: map-get($texto,color);
+section {
+    .sub_titulo {
+        font-family: 'Vujahday Script', cursive;
+        font-size: 5vw;
+        color: $color-orange;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+    }
 
-}
+    .subtitulo1 {
+        font-size: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
 
-.sub_titulo {
-    font-family: 'Vujahday Script', cursive;
-    font-size: 5vw;
-    color: $color-orange;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5%;
-}
+    .subtitulo_desc {
+        @include texto;
+        font-family: map-get($texto, font-family), sans-serif;
+        text-align: map-get($texto, text-align);
+        display: map-get($texto, display);
+        align-items: map-get($texto, align-items);
+        margin-bottom: map-get($texto, margin-bottom);
+        color: map-get($texto, color);
+    }
 
-.subtitulo1 {
-    font-size: 3vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
+    .video {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
 
-.subtitulo_desc {
-    @include texto;
-    font-family:map-get($texto,font-family),sans-serif;
-    text-align: map-get($texto,text-align);
-    display: map-get($texto,display);
-    align-items: map-get($texto,align-items);
-    margin-bottom:map-get($texto,margin-bottom);
-    color: map-get($texto,color);
-}
-
-.video {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
-}
-
-.video iframe {
-    width: 352px;
-    height: 198px;
+    .video iframe {
+        width: 352px;
+        height: 198px;
+    }
 }
 
 $reco: (EnriqueAlex: rgb(219, 0, 0),
@@ -70,20 +73,21 @@ $reco: (EnriqueAlex: rgb(219, 0, 0),
 @each $red,
 $color in $reco {
     .btn--#{$red} {
-    position: relative;
-    padding: 1em 1.5em;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    outline: none;
-    font-size: 2rem;
-    margin: 1em 0.8em;
+        position: relative;
+        padding: 1em 1.5em;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+        font-size: 2rem;
+        margin: 1em 0.8em;
     }
 }
 
 .type1 {
     color: black;
 }
+
 .type1::after,
 .type1::before {
     content: '';
@@ -95,6 +99,7 @@ $color in $reco {
     transition: all 0.6s ease;
     border-radius: 2px;
 }
+
 .type1::after {
     bottom: 0;
     right: 0;
@@ -103,6 +108,7 @@ $color in $reco {
     border-bottom-color: black;
     border-right-color: black;
 }
+
 .type1::before {
     top: 0;
     left: 0;
@@ -111,6 +117,7 @@ $color in $reco {
     border-top-color: orange;
     border-left-color: orange;
 }
+
 .type1:hover:after,
 .type1:hover:before {
     width: 100%;

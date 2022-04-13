@@ -1,6 +1,7 @@
 /* FOTOGRAFIA */
 
-.p_fotografia{
+section{
+    .p_fotografia{
     @include texto;
     font-family:map-get($texto,font-family),sans-serif;
     text-align: map-get($texto,text-align);
@@ -11,6 +12,7 @@
     align-items: map-get($texto,align-items);
     color: map-get($texto,color);
     margin-top: map-get($texto,margin-top);
+    }
 }
 
 

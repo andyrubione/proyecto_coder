@@ -1,8 +1,11 @@
 /* CONOCEME */
 
-.index_link {
-    color: $color-blue
+header {
+    .index_link {
+        color: $color-blue
+    }
 }
+
 .img1 {
     background-image: url(../Imagen/Fondo.jpeg);
     max-width: 80vw;
@@ -13,46 +16,51 @@
     background-size: cover;
     margin-bottom: 3rem;
 }
-.desc1 {
-    @include texto;
-    text-align: map-get($texto,text-align);
-    max-width: map-get($texto,max-width);
-    display: map-get($texto,display);
-    color: map-get($texto,color);
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin-bottom: 5%;
-    align-items: flex-end;
-    justify-content: center;
+section {
+    .desc1 {
+        @include texto;
+        text-align: map-get($texto, text-align);
+        max-width: map-get($texto, max-width);
+        display: map-get($texto, display);
+        color: map-get($texto, color);
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 5%;
+        align-items: flex-end;
+        justify-content: center;
+        z-index: 1;
+    }
 
-    z-index: 1;
-}
-.img2 {
-    background-image: url(../Imagen/Lateral_del_texto.jpg);
-    min-height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 3rem;
-}
-.desc2 {
-    @extend .desc1;
-    line-height: 130%;
-    align-items: map-get($texto,align-items);
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    .img2 {
+        background-image: url(../Imagen/Lateral_del_texto.jpg);
+        min-height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 3rem;
+    }
+
+    .desc2 {
+        @extend .desc1;
+        line-height: 130%;
+        align-items: map-get($texto, align-items);
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .desc3 {
+        @extend .desc1;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: map-get($texto, align-items);
+        max-width: 40%;
+        line-height: 130%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
 
 }
-.desc3 {
-    @extend .desc1;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: map-get($texto,align-items);
-    max-width: 40%;
-    line-height: 130%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
+
 .img3 {
     background-image: url(../Imagen/Ecoparque.jpg);
     background-size: cover;
@@ -60,5 +68,4 @@
     background-repeat: no-repeat;
     z-index: -1;
     width: 100vw;
-
 }

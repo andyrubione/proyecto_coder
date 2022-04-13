@@ -12,13 +12,6 @@ body {
   max-width: 100vw;
   width: 100%;
   overflow-x: hidden; }
-  body .contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    max-width: 99vw;
-    grid-template-areas: "contenedor";
-    grid-area: contenedor; }
 
 .parallax {
   background-image: url(../Imagen/Fondo2.jpg);
@@ -27,8 +20,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 4rem; }
+  background-size: cover; }
 
 .home {
   position: absolute;
@@ -54,12 +46,13 @@ header nav ul li {
   display: inline-block;
   font-size: 20px; }
 
-section .texto_arriba {
+.texto_arriba {
   position: absolute;
   top: 4rem;
-  left: 1rem; }
+  left: 1rem;
+  z-index: -1; }
 
-section .el_turista {
+.el_turista {
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
@@ -67,7 +60,8 @@ section .el_turista {
   font-family: 'Vujahday Script', cursive;
   font-style: italic;
   color: #ff8e00;
-  font-weight: 100; }
+  font-weight: 100;
+  z-index: -1; }
 
 a {
   font-family: 'Source Sans Pro', sans-serif; }
@@ -82,7 +76,7 @@ a {
   width: 100vw;
   position: absolute; }
 
-.presentacion, .presentacion2 {
+section .presentacion, section .presentacion2 {
   font-family: 'Source Sans Pro';
   font-size: 2vw;
   font-weight: lighter;
@@ -96,17 +90,16 @@ a {
   margin-top: 5rem;
   margin-bottom: 5rem; }
 
-.parallax2 {
+section .parallax2 {
   background-image: url(../Imagen/PANO_20211026_112913-02-01.jpeg);
   min-height: 800px;
   max-width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
-  margin-bottom: 4rem; }
+  margin: 0; }
 
-.presentacion2 {
+section .presentacion2 {
   line-height: 130%;
   flex-direction: column;
   align-items: center;
@@ -114,7 +107,56 @@ a {
   margin-top: 5rem;
   margin-bottom: 5rem; }
 
-.parallax3 {
+section .grid_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em 1em;
+  grid-template-areas: "Foto1 Foto2" "Foto3 Foto4";
+  max-width: 100vw;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  section .grid_menu .imgHover1 {
+    grid-area: Foto1; }
+  section .grid_menu .imgHover2 {
+    grid-area: Foto2; }
+  section .grid_menu .imgHover3 {
+    grid-area: Foto3; }
+  section .grid_menu .imgHover4 {
+    grid-area: Foto4; }
+  section .grid_menu .HoverFoto {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    max-width: 45vw;
+    position: relative;
+    cursor: pointer; }
+    section .grid_menu .HoverFoto img {
+      background-size: contain;
+      width: 45vw;
+      background-position: center; }
+    section .grid_menu .HoverFoto a {
+      text-decoration: none;
+      color: #fff;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      text-align: center;
+      font-size: 40px;
+      height: 0px;
+      position: absolute;
+      transition: 0.5s ease all;
+      visibility: hidden;
+      opacity: 0;
+      bottom: 3px; }
+    section .grid_menu .HoverFoto:hover a {
+      background-color: rgba(255, 255, 255, 0.4);
+      visibility: visible;
+      height: fit-content;
+      padding: 3rem 0;
+      opacity: 1; }
+
+section .parallax3 {
   background-image: url(../Imagen/carancho.jpeg);
   min-height: 700px;
   max-width: 100vw;
@@ -122,76 +164,68 @@ a {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.grid_menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1em 1em;
-  grid-template-areas: "Foto1 Foto2" "Foto3 Foto4";
-  max-width: 100vw; }
+/* CONOCEME */
+header .index_link {
+  color: #00123abd; }
 
-.imgHover1 {
-  grid-area: Foto1; }
+.img1 {
+  background-image: url(../Imagen/Fondo.jpeg);
+  max-width: 80vw;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem; }
 
-.imgHover2 {
-  grid-area: Foto2; }
-
-.imgHover3 {
-  grid-area: Foto3; }
-
-.imgHover4 {
-  grid-area: Foto4; }
-
-.HoverFoto {
-  float: left;
-  display: inline-block;
-  width: 100%;
-  max-width: 45vw;
-  position: relative;
-  cursor: pointer; }
-
-.HoverFoto img {
-  background-size: contain;
-  width: 45vw;
-  height: 45vh;
-  background-position: center; }
-
-.HoverFoto a {
-  text-decoration: none;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  left: 0;
+section .desc1, section .desc2, section .desc3 {
+  font-family: 'Source Sans Pro';
+  font-size: 2vw;
+  font-weight: lighter;
   text-align: center;
-  font-size: 40px;
-  height: 0px;
-  position: absolute;
-  transition: 0.5s ease all;
-  visibility: hidden;
-  opacity: 0;
-  bottom: 3px; }
-
-.HoverFoto:hover a {
-  background-color: rgba(255, 255, 255, 0.4);
-  visibility: visible;
-  height: fit-content;
-  padding: 3rem 0;
-  opacity: 1; }
-
-/* comienzo del footer */
-.flex_foot {
+  max-width: 100vw;
   display: flex;
+  color: #00123abd;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 1rem;
+  flex-wrap: nowrap;
+  margin-bottom: 5%;
+  align-items: flex-end;
+  justify-content: center;
   z-index: 1; }
 
-footer ul li {
-  list-style: none; }
+section .img2 {
+  background-image: url(../Imagen/Lateral_del_texto.jpg);
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 3rem; }
+
+section .desc2 {
+  line-height: 130%;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+section .desc3 {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: 40%;
+  line-height: 130%;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.img3 {
+  background-image: url(../Imagen/Ecoparque.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100vw; }
 
 /* FOTOGRAFIA */
-.p_fotografia {
+section .p_fotografia {
   font-family: 'Source Sans Pro';
   font-size: 2vw;
   font-weight: lighter;
@@ -205,311 +239,8 @@ footer ul li {
   color: #00123abd;
   margin-top: 10rem; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-html {
-  font-size: 62, 5%; }
-
-body {
-  background-color: whitesmoke;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 100vw;
-  width: 100%;
-  overflow-x: hidden; }
-  body .contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    max-width: 99vw;
-    grid-template-areas: "contenedor";
-    grid-area: contenedor; }
-
-.parallax {
-  background-image: url(../Imagen/Fondo2.jpg);
-  min-height: 800px;
-  max-width: 100vw;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 4rem; }
-
-.home {
-  position: absolute;
-  transform: translate(10px);
-  top: 10px;
-  text-align: left;
-  left: 10px; }
-
-.menu {
-  position: absolute;
-  top: 1rem;
-  font-size: 20px; }
-
-.menu_link {
-  color: #00123abd; }
-
-header nav .navbar {
-  z-index: 2;
-  width: 100vw; }
-
-header nav ul li {
-  list-style: none;
-  display: inline-block;
-  font-size: 20px; }
-
-section .texto_arriba {
-  position: absolute;
-  top: 4rem;
-  left: 1rem; }
-
-section .el_turista {
-  display: flex;
-  flex-direction: column;
-  padding-left: 2rem;
-  font-size: 150px;
-  font-family: 'Vujahday Script', cursive;
-  font-style: italic;
-  color: #ff8e00;
-  font-weight: 100; }
-
-a {
-  font-family: 'Source Sans Pro', sans-serif; }
-
-.titulos {
-  font-family: 'Vujahday Script', cursive;
-  font-size: 80px;
-  color: #00123abd;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  width: 100vw;
-  position: absolute; }
-
-/* MEDIA */
-@media screen and (max-width: 656px) {
-  /* INDEX */
-  .grill_tit {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "grill";
-    width: 90vw;
-    padding-left: 0;
-    margin-left: 0;
-    justify-content: center;
-    justify-items: center; }
-  .el_turista {
-    font-size: 100px;
-    align-items: center;
-    padding-left: 0rem; }
-  section h1 {
-    margin-top: 0rem; }
-  .back_turista {
-    position: absolute;
-    width: 20rem;
-    height: 20rem;
-    opacity: 0.8;
-    background-color: whitesmoke;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-    z-index: -1;
-    margin-left: 1.5rem; }
-  .texto_arriba {
-    display: flex;
-    justify-items: center;
-    top: 6rem; }
-  header nav ul li {
-    font-size: 15px; }
-  .parallax {
-    min-height: 45rem;
-    background-position-y: 30rem;
-    background-size: contain;
-    background-attachment: local; }
-  .presentacion, .presentacion2 {
-    font-size: 15px;
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
-  .parallax2 {
-    min-height: 10rem;
-    max-width: 100%; }
-  .presentacion2 {
-    font-size: 15px;
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
-  .parallax3 {
-    min-height: 10rem;
-    background-position-y: 0rem;
-    background-size: contain;
-    background-attachment: local; }
-  /* CONOCEME */
-  .titulos {
-    font-size: 60px;
-    margin-top: 4rem; }
-  /* RECOMENDACIONES */
-  .titulo_descripcion {
-    font-size: 15px;
-    font-weight: 700; }
-  .sub_titulo {
-    font-size: 45px;
-    margin-bottom: 5%; }
-  .subtitulo1 {
-    font-size: 25px;
-    align-items: center; }
-  .subtitulo_desc {
-    font-size: 15px; }
-  .video iframe {
-    width: 352px;
-    height: 198px; }
-  /* CONTACTO */
-  .contacto {
-    top: 7rem;
-    width: 20rem;
-    left: 50%;
-    margin-left: -10rem; } }
-
-@media screen and (max-width: 426px) {
-  /* INDEX */
-  .grill_tit {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "grill";
-    width: 80vw;
-    padding-left: 0;
-    margin-left: 1rem;
-    justify-content: center;
-    justify-items: center; }
-  .el_turista {
-    font-size: 75px;
-    padding-top: 1rem;
-    padding-left: 0; }
-  .back_turista {
-    width: 15rem;
-    height: 15rem;
-    margin-top: 1rem; }
-  .presentacion, .presentacion2 {
-    font-size: 10px; }
-  .parallax {
-    min-height: 34rem;
-    background-position-y: 25rem; }
-  /* CONOCEME */
-  .titulos {
-    font-size: 45px;
-    margin-top: 3rem; }
-  .contacto {
-    margin-top: 6rem; }
-  .imagen_fondo {
-    height: 120vh; }
-  /* RECOMENDACIONES */
-  .video iframe {
-    width: 256px;
-    height: 144px; } }
-
-@media screen and (max-width: 350px) {
-  /* INDEX */
-  .grill_tit {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "grill";
-    width: 80vw;
-    padding-left: 0;
-    margin-left: 0rem;
-    justify-content: center;
-    justify-items: center; }
-  .el_turista {
-    font-size: 50px;
-    padding-left: 0;
-    padding-top: 0.5rem; }
-  .back_turista {
-    width: 10rem;
-    height: 10rem;
-    margin-top: 0.1rem; }
-  .texto_arriba {
-    display: flex;
-    justify-items: center;
-    top: 4rem; }
-  header nav ul li {
-    font-size: 15px; }
-  .index_grid {
-    font-size: 13px; }
-  .parallax {
-    min-height: 25rem;
-    background-position-y: 15rem; }
-  .presentacion, .presentacion2 {
-    font-size: 10px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 0 1rem; }
-  .presentacion2 {
-    font-size: 10px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 0 1rem; }
-  .flex_foot {
-    margin: 0rem;
-    font-size: 13px; }
-  /* CONOCEME */
-  .titulos {
-    font-size: 40px;
-    margin-top: 4rem; } }
-
-@media screen and (max-width: 328px) {
-  /* INDEX */
-  .el_turista {
-    font-size: 50px;
-    padding-left: 0rem;
-    padding-top: 0.5rem; }
-  .back_turista {
-    width: 10rem;
-    height: 10rem;
-    margin-top: 0.1rem; }
-  .texto_arriba {
-    display: flex;
-    justify-items: center;
-    top: 4rem; }
-  header nav ul li {
-    font-size: 15px; }
-  .index_grid {
-    font-size: 13px; }
-  .parallax {
-    min-height: 25rem;
-    background-position-y: 15rem; }
-  .presentacion, .presentacion2 {
-    font-size: 10px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 0 1rem; }
-  .parallax2 {
-    min-height: 7rem; }
-  .presentacion2 {
-    font-size: 10px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 0; }
-  .flex_foot {
-    margin: 0rem;
-    font-size: 13px; }
-  /* CONOCEME */
-  .titulos {
-    font-size: 30px;
-    margin-top: 5rem; }
-  .contacto {
-    margin-top: 7rem; }
-  /* FOTOGRAFIA */
-  .p_fotografia {
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 2rem; } }
-
 /* RECOMENDACIONES */
-.img_fondo {
+section .img_fondo {
   background-image: url(../Imagen/recomendaciones.jpeg);
   min-height: 1000px;
   width: 100vw;
@@ -519,7 +250,7 @@ a {
   background-size: cover;
   margin-bottom: 10px; }
 
-.titulo_descripcion {
+section .titulo_descripcion {
   font-family: 'Source Sans Pro';
   font-size: 2vw;
   font-weight: lighter;
@@ -529,7 +260,7 @@ a {
   margin-bottom: 3rem;
   color: #00123abd; }
 
-.sub_titulo {
+section .sub_titulo {
   font-family: 'Vujahday Script', cursive;
   font-size: 5vw;
   color: #ff8e00;
@@ -538,7 +269,7 @@ a {
   align-items: center;
   margin-bottom: 5%; }
 
-.subtitulo1 {
+section .subtitulo1 {
   font-size: 3vw;
   display: flex;
   flex-direction: column;
@@ -546,7 +277,7 @@ a {
   margin-top: 3rem;
   margin-bottom: 3rem; }
 
-.subtitulo_desc {
+section .subtitulo_desc {
   font-family: 'Source Sans Pro';
   font-size: 2vw;
   font-weight: lighter;
@@ -557,12 +288,12 @@ a {
   margin-bottom: 3rem;
   color: #00123abd; }
 
-.video {
+section .video {
   display: flex;
   justify-content: center;
   margin-bottom: 3rem; }
 
-.video iframe {
+section .video iframe {
   width: 352px;
   height: 198px; }
 
@@ -641,72 +372,12 @@ a {
   width: 100%;
   height: 100%; }
 
-/* CONOCEME */
-.index_link {
-  color: #00123abd; }
-
-.img1 {
-  background-image: url(../Imagen/Fondo.jpeg);
-  max-width: 80vw;
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 3rem; }
-
-.desc1, .desc2, .desc3 {
-  font-family: 'Source Sans Pro';
-  font-size: 2vw;
-  font-weight: lighter;
-  text-align: center;
-  max-width: 100vw;
-  display: flex;
-  color: #00123abd;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin-bottom: 5%;
-  align-items: flex-end;
-  justify-content: center;
-  z-index: 1; }
-
-.img2 {
-  background-image: url(../Imagen/Lateral_del_texto.jpg);
-  min-height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 3rem; }
-
-.desc2 {
-  line-height: 130%;
-  align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
-
-.desc3 {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  max-width: 40%;
-  line-height: 130%;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
-
-.img3 {
-  background-image: url(../Imagen/Ecoparque.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  width: 100vw; }
-
 /* CONTACTO */
 .navbar_contacto {
   position: absolute;
   z-index: 2; }
 
-.imagen_fondo {
+section .imagen_fondo {
   position: absolute;
   background-image: url(../Imagen/back_contacto.jpeg);
   height: 120vh;
@@ -716,11 +387,337 @@ a {
   background-repeat: no-repeat;
   z-index: -1; }
 
-.contacto {
-  font-size: 1rem;
+section .contacto {
+  font-size: 2rem;
   color: #ff8e00;
   margin-top: 9rem; }
 
-.contacto_cuadros {
-  opacity: 0.8;
+section .contacto_cuadros {
+  font-size: 1rem;
   color: #ff8e00; }
+
+#footer {
+  text-align: center; }
+  #footer .container {
+    position: relative; }
+    #footer .container h3 {
+      font-family: 'Source Sans Pro';
+      font-size: 2vw;
+      font-weight: lighter;
+      font-size: 4rem;
+      color: #00123abd;
+      position: relative;
+      padding: 3rem;
+      margin: 0 0 1rem 0; }
+    #footer .container p {
+      font-family: 'Source Sans Pro';
+      font-size: 2vw;
+      font-weight: lighter;
+      font-size: 2rem;
+      padding: 0; }
+    #footer .container .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+      #footer .container .links a {
+        font-family: 'Source Sans Pro';
+        font-size: 2vw;
+        font-weight: lighter;
+        font-size: 1rem;
+        display: inline-block;
+        background: #ff8e00;
+        color: whitesmoke;
+        padding: 0 0;
+        border-radius: 50%;
+        text-align: center;
+        transition: 0.3s; }
+
+/* MEDIA */
+@media screen and (max-width: 656px) {
+  /* INDEX */
+  .grill_tit {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "grill";
+    width: 90vw;
+    padding-left: 0;
+    margin-left: 0;
+    justify-content: center;
+    justify-items: center; }
+  .el_turista {
+    font-size: 100px;
+    align-items: center;
+    padding-left: 0rem; }
+  section h1 {
+    margin-top: 0rem; }
+  .back_turista {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    opacity: 0.8;
+    background-color: whitesmoke;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    z-index: -1;
+    margin-left: 1.5rem; }
+  .texto_arriba {
+    display: flex;
+    justify-items: center;
+    top: 6rem; }
+  header nav ul li {
+    font-size: 15px; }
+  .parallax {
+    min-height: 45rem;
+    background-position-y: 30rem;
+    background-size: contain;
+    background-attachment: local; }
+  .presentacion, section .presentacion2 {
+    font-size: 15px;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .parallax2 {
+    min-height: 10rem;
+    max-width: 100%; }
+  .presentacion2 {
+    font-size: 15px;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .parallax3 {
+    min-height: 10rem;
+    background-position-y: 0rem;
+    background-size: contain;
+    background-attachment: local; }
+  /* CONOCEME */
+  .titulos {
+    font-size: 60px;
+    margin-top: 4rem; }
+  /* RECOMENDACIONES */
+  .titulo_descripcion {
+    font-size: 15px;
+    font-weight: 700; }
+  .sub_titulo {
+    font-size: 45px;
+    margin-bottom: 5%; }
+  .subtitulo1 {
+    font-size: 25px;
+    align-items: center; }
+  .subtitulo_desc {
+    font-size: 15px; }
+  .video iframe {
+    width: 352px;
+    height: 198px; }
+  /* CONTACTO */
+  .contacto {
+    top: 7rem;
+    width: 20rem;
+    left: 50%;
+    margin-left: -10rem; } }
+
+#footer .container h3 {
+  font-size: 30px; }
+
+#footer .container p {
+  font-size: 15px; }
+
+#footer .container a {
+  font-size: 15px; }
+
+@media screen and (max-width: 426px) {
+  /* INDEX */
+  .el_turista {
+    font-size: 75px;
+    padding-top: 1rem;
+    padding-left: 0; }
+  .back_turista {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 1rem; }
+  .presentacion, section .presentacion2 {
+    font-size: 10px; }
+  .parallax {
+    min-height: 34rem;
+    background-position-y: 25rem; }
+  /* CONOCEME */
+  .titulos {
+    font-size: 45px;
+    margin-top: 3rem; }
+  .contacto {
+    margin-top: 6rem; }
+  .imagen_fondo {
+    height: 120vh; }
+  /* RECOMENDACIONES */
+  .video iframe {
+    width: 256px;
+    height: 144px; } }
+
+@media screen and (max-width: 350px) {
+  /* INDEX */
+  .el_turista {
+    font-size: 50px;
+    padding-left: 0;
+    padding-top: 0.5rem; }
+  .back_turista {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 0.1rem; }
+  .texto_arriba {
+    display: flex;
+    justify-items: center;
+    top: 4rem; }
+  header nav ul li {
+    font-size: 15px; }
+  .index_grid {
+    font-size: 13px; }
+  .parallax {
+    min-height: 25rem;
+    background-position-y: 15rem; }
+  .presentacion, section .presentacion2 {
+    font-size: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem; }
+  .presentacion2 {
+    font-size: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem; }
+  .flex_foot {
+    margin: 0rem;
+    font-size: 13px; }
+  /* CONOCEME */
+  .titulos {
+    font-size: 40px;
+    margin-top: 4rem; } }
+
+@media screen and (max-width: 328px) {
+  /* INDEX */
+  .el_turista {
+    font-size: 50px;
+    padding-left: 0rem;
+    padding-top: 0.5rem; }
+  .back_turista {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 0.1rem; }
+  .texto_arriba {
+    display: flex;
+    justify-items: center;
+    top: 4rem; }
+  header nav ul li {
+    font-size: 15px; }
+  .index_grid {
+    font-size: 13px; }
+  .parallax {
+    min-height: 25rem;
+    background-position-y: 15rem; }
+  .presentacion, section .presentacion2 {
+    font-size: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem; }
+  .parallax2 {
+    min-height: 7rem; }
+  .presentacion2 {
+    font-size: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0; }
+  .flex_foot {
+    margin: 0rem;
+    font-size: 13px; }
+  /* CONOCEME */
+  .titulos {
+    font-size: 30px;
+    margin-top: 5rem; }
+  .contacto {
+    margin-top: 7rem; }
+  /* FOTOGRAFIA */
+  .p_fotografia {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 2rem; } }
+
+/* ANIMACIONES */
+.menu {
+  animation: fadeInDown;
+  animation-duration: 3s; }
+
+.el_turista {
+  animation: fadeInLeft;
+  animation-duration: 3s; }
+
+.presentacion, section .presentacion2 {
+  animation: fadeInUp;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-play-state: scroll; }
+
+.presentacion2 {
+  animation: fadeInUp;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-play-state: scroll; }
+
+.titulos {
+  animation: fadeIn;
+  animation-duration: 5s; }
+
+.desc1, section .desc2, section .desc3 {
+  animation: fadeInUp;
+  animation-duration: 4s; }
+
+.img2 {
+  animation: fadeInLeft;
+  animation-duration: 3s;
+  animation-delay: 2s; }
+
+.desc2 {
+  animation: fadeInRight;
+  animation-duration: 3s;
+  animation-delay: 2s; }
+
+.img3 {
+  animation: fadeInUp;
+  animation-duration: 4s;
+  animation-delay: 4s; }
+
+.desc3 {
+  animation: fadeInLeft;
+  animation-duration: 4s;
+  animation-delay: 4s; }
+
+.p_fotografia {
+  animation: fadeInUp;
+  animation-duration: 4s; }
+
+.titulo_descripcion {
+  animation: fadeInUp;
+  animation-duration: 4s;
+  animation-delay: 2s; }
+
+.sub_titulo {
+  animation: fadeIn;
+  animation-duration: 4s;
+  animation-delay: 2s; }
+
+.subtitulo_desc {
+  animation: fadeInUp;
+  animation-duration: 4s;
+  animation-delay: 2s; }
+
+.sub_titulo1 {
+  animation: fadeIn;
+  animation-duration: 4s;
+  animation-delay: 2s; }
+
+.nombre {
+  animation: fadeIn;
+  animation-duration: 10s;
+  animation-delay: 2s; }
+
+body {
+  overflow-x: hidden; }
