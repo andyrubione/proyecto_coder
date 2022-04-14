@@ -1,6 +1,6 @@
-Coloque el meta Keyword al index
-Coloque el meta description al index
-Modifique la etiqueta title para hacerlo mas descriptivo
+Coloque el meta Keyword a todas las paginas
+Coloque el meta description a todas las paginas
+Modifique la etiqueta title de todas las paginas para hacerlo mas descriptivo
 Modifique el footer para realizar un Mapa del sitio
 Coloque el atributo "alt" a las fotos del index para realizar una descripcion de las mismas
 Coloque el atributo "title" a las fotos del index para hacer el sitio mas accesible
