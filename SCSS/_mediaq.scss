@@ -23,15 +23,14 @@
                 font-size: 15px;
         }
 
-        .parallax {
-                min-height: 10rem;
+        section .parallax {
+                min-height: 20rem;
                 background-position-y: 0rem;
-                background-size: contain;
+                background-size: cover;
                 background-attachment: local;
         }
 
         .presentacion {
-                font-size: 15px;
                 margin-top: 2rem;
                 margin-bottom: 2rem;
         }
@@ -44,7 +43,6 @@
         }
 
         .presentacion2 {
-                font-size: 15px;
                 margin-top: 2rem;
                 margin-bottom: 2rem;
         }
@@ -99,21 +97,6 @@
         }
 }
 
-#footer {
-        .container {
-                h3 {
-                font-size: 30px;
-                }
-
-                p {
-                font-size: 15px;
-                }
-                a {
-                font-size: 15px;
-                }
-                
-        }
-}
 
 @media screen and (max-width: 426px) {
 
@@ -125,7 +108,6 @@
                 padding-left: 0;
         }
         .presentacion {
-                font-size: 10px;
         }
 
         /* CONOCEME */
@@ -173,12 +155,8 @@
                 font-size: 13px;
         }
 
-        .parallax {
-                min-height: 10rem;
-        }
 
         .presentacion {
-                font-size: 10px;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
                 padding: 0 1rem;
@@ -186,7 +164,6 @@
         }
 
         .presentacion2 {
-                font-size: 10px;
                 margin-top: 2rem;
                 margin-bottom: 2rem;
                 padding: 0 1rem;
@@ -232,18 +209,18 @@
         }
 
         .presentacion {
-                font-size: 10px;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
                 padding: 0 1rem;
         }
-
+        section .parallax {
+                min-height: 7rem;
+        }
         section .parallax2 {
                 min-height: 7rem;
         }
 
         .presentacion2 {
-                font-size: 10px;
                 margin-top: 2rem;
                 margin-bottom: 2rem;
                 padding: 0;

@@ -3,10 +3,10 @@
 
     .container {
         position: relative;
-
+        
         h3 {
             @include texto;
-            font-size: 4rem;
+            font-size: 4vw;
             color: $color-blue;
             position: relative;
             padding: 3rem;
@@ -15,26 +15,27 @@
 
         p {
             @include texto;
-            font-size: 2rem;
+            font-size: 3vw;
             padding: 0;
+            margin-bottom: 3rem;
         }
 
         .links {
             display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-around;
             flex-wrap: wrap;
-            
+
             a {
+                text-decoration: none;
                 @include texto;
-                font-size: 1rem;
                 display: inline-block;
-                background: $color-orange;
-                color: whitesmoke;
+                color: $color-blue;
                 padding: 0 0;
-                border-radius: 50%;
                 text-align: center;
                 transition: 0.3s;
+                list-style: none;
             }
         }
     }

@@ -1,4 +1,17 @@
+#html{
+    overflow-x: hidden;
+}
 section {
+    .parallax {
+        background-image: url(../Imagen/Fondo2.jpg);
+        min-height: 800px;
+        max-width: 100vw;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
     .presentacion {
     @include texto;
     font-family:map-get($texto,font-family),sans-serif;
@@ -8,8 +21,9 @@ section {
     display: map-get($texto,display);
     align-items: map-get($texto,align-items);
     align-content: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
+    font-size: 2vw;
     }
     .parallax2 {
         background-image: url(../Imagen/PANO_20211026_112913-02-01.jpeg);
@@ -53,7 +67,7 @@ section {
             grid-area: Foto4;
         }
         .HoverFoto {
-            float: left;
+
             display: inline-block;
             width: 100%;
             max-width: 45vw;
@@ -71,7 +85,7 @@ section {
                 height: 100%;
                 left: 0;
                 text-align: center;
-                font-size: 40px;
+                font-size: 3vw;
                 height: 0px;
                 position: absolute;
                 transition: 0.5s ease all;
@@ -83,7 +97,7 @@ section {
                 background-color: rgba(255, 255, 255, 0.4);
                 visibility: visible;
                 height: fit-content;
-                padding: 3rem 0;
+                padding: 2rem 0;
                 opacity: 1;
             }
         }
