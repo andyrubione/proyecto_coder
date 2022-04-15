@@ -105,13 +105,13 @@ section .presentacion2 {
 
 section .grid_menu {
   display: grid;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1em 1em;
   grid-template-areas: "Foto1 Foto2" "Foto3 Foto4";
-  max-width: 100vw;
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
+  max-width: 100vw; }
   section .grid_menu .imgHover1 {
     grid-area: Foto1; }
   section .grid_menu .imgHover2 {
