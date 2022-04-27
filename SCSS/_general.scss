@@ -10,9 +10,9 @@ html {
 
 
 body {
-    background-color: whitesmoke;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../subtle-prism.svg )  ;
+    background-size:contain ;
+    background-repeat: repeat;
     max-width: 100vw;
     width: 100%;
     overflow-x: hidden;
@@ -46,7 +46,8 @@ header {
             li {
                 list-style: none;
                 display: inline-block;
-                font-size: 20px;
+                font-size: 2vw;
+                font-weight: bold;
             }
         }
     }
@@ -82,8 +83,6 @@ $texto:(font-family: 'Source Sans Pro',
     text-align: center,
     max-width: 100vw,
     margin-bottom: 3rem,
-    display: flex,
-    flex-direction: column,
     align-items: center,
     color: $color-blue,
     margin-top: 10rem,
@@ -91,6 +90,5 @@ $texto:(font-family: 'Source Sans Pro',
 
 @mixin texto {
     font-family: 'Source Sans Pro';
-    font-size: 2vw;
-    font-weight: lighter;
+    font-size: 2.5vw;
 }

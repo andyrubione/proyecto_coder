@@ -6,16 +6,16 @@
         
         h3 {
             @include texto;
-            font-size: 4vw;
+            font-size: 3vw;
             color: $color-blue;
             position: relative;
-            padding: 3rem;
+            padding: 6vw;
             margin: 0 0 1rem 0;
         }
 
         p {
             @include texto;
-            font-size: 3vw;
+            font-size: 2vw;
             padding: 0;
             margin-bottom: 3rem;
         }
@@ -30,6 +30,7 @@
             a {
                 text-decoration: none;
                 @include texto;
+                font-size: 2vw;
                 display: inline-block;
                 color: $color-blue;
                 padding: 0 0;

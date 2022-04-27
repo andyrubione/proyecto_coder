@@ -6,9 +6,9 @@ html {
   font-size: 62, 5%; }
 
 body {
-  background-color: whitesmoke;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../subtle-prism.svg);
+  background-size: contain;
+  background-repeat: repeat;
   max-width: 100vw;
   width: 100%;
   overflow-x: hidden; }
@@ -34,7 +34,8 @@ header nav .navbar {
 header nav ul li {
   list-style: none;
   display: inline-block;
-  font-size: 20px; }
+  font-size: 2vw;
+  font-weight: bold; }
 
 .el_turista {
   text-align: center;
@@ -69,22 +70,21 @@ section .parallax {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7); }
 
 section .presentacion, section .presentacion2 {
   font-family: 'Source Sans Pro';
-  font-size: 2vw;
-  font-weight: lighter;
+  font-size: 2.5vw;
   font-family: "Source Sans Pro", sans-serif;
   color: #00123abd;
   text-align: center;
-  line-height: 130%;
-  display: flex;
   align-items: center;
   align-content: center;
   margin-top: 2rem;
-  margin-bottom: 5rem;
-  font-size: 2vw; }
+  margin-bottom: 5rem; }
 
 section .parallax2 {
   background-image: url(../Imagen/PANO_20211026_112913-02-01.jpeg);
@@ -93,10 +93,12 @@ section .parallax2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0; }
+  margin: 0;
+  -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7); }
 
 section .presentacion2 {
-  line-height: 130%;
   flex-direction: column;
   align-items: center;
   align-content: center;
@@ -113,13 +115,25 @@ section .grid_menu {
   grid-template-areas: "Foto1 Foto2" "Foto3 Foto4";
   max-width: 100vw; }
   section .grid_menu .imgHover1 {
-    grid-area: Foto1; }
+    grid-area: Foto1;
+    -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+    -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+    box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7); }
   section .grid_menu .imgHover2 {
-    grid-area: Foto2; }
+    grid-area: Foto2;
+    -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+    -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+    box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7); }
   section .grid_menu .imgHover3 {
-    grid-area: Foto3; }
+    grid-area: Foto3;
+    -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+    -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+    box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7); }
   section .grid_menu .imgHover4 {
-    grid-area: Foto4; }
+    grid-area: Foto4;
+    -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+    -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+    box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7); }
   section .grid_menu .HoverFoto {
     display: inline-block;
     width: 100%;
@@ -132,24 +146,24 @@ section .grid_menu {
       background-position: center; }
     section .grid_menu .HoverFoto a {
       text-decoration: none;
-      color: #fff;
+      color: #00123abd;
       width: 100%;
       height: 100%;
       left: 0;
       text-align: center;
       font-size: 3vw;
-      height: 0px;
       position: absolute;
-      transition: 0.5s ease all;
-      visibility: hidden;
-      opacity: 0;
+      transition: 1s ease all;
+      visibility: visible;
+      opacity: 1;
       bottom: 3px; }
     section .grid_menu .HoverFoto:hover a {
-      background-color: rgba(255, 255, 255, 0.4);
+      background-color: rgba(255, 255, 255, 0.765);
+      backdrop-filter: blur(8.5px);
       visibility: visible;
       height: fit-content;
       padding: 2rem 0;
-      opacity: 1; }
+      opacity: 0.9; }
 
 section .parallax3 {
   background-image: url(../Imagen/carancho.jpeg);
@@ -157,7 +171,10 @@ section .parallax3 {
   max-width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7); }
 
 /* CONOCEME */
 header .index_link {
@@ -171,15 +188,16 @@ header .index_link {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7); }
 
 section .desc1, section .desc2, section .desc3 {
   font-family: 'Source Sans Pro';
-  font-size: 2vw;
-  font-weight: lighter;
+  font-size: 2.5vw;
   text-align: center;
   max-width: 100vw;
-  display: flex;
   color: #00123abd;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -193,8 +211,11 @@ section .img2 {
   min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 3rem; }
+  background-size: cover;
+  margin-bottom: 3rem;
+  -webkit-box-shadow: 10px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  -moz-box-shadow: 10px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  box-shadow: 10px 15px 6px -6px rgba(21, 21, 21, 0.7); }
 
 section .desc2 {
   line-height: 130%;
@@ -217,19 +238,19 @@ section .desc3 {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
-  width: 100vw; }
+  width: 100vw;
+  -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+  box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7); }
 
 /* FOTOGRAFIA */
 section .p_fotografia {
   font-family: 'Source Sans Pro';
-  font-size: 2vw;
-  font-weight: lighter;
+  font-size: 2.5vw;
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
   max-width: 100vw;
   margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   color: #00123abd;
   margin-top: 10rem; }
@@ -247,8 +268,7 @@ section .img_fondo {
 
 section .titulo_descripcion {
   font-family: 'Source Sans Pro';
-  font-size: 2vw;
-  font-weight: lighter;
+  font-size: 2.5vw;
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
   margin-top: 3rem;
@@ -274,11 +294,9 @@ section .subtitulo1 {
 
 section .subtitulo_desc {
   font-family: 'Source Sans Pro';
-  font-size: 2vw;
-  font-weight: lighter;
+  font-size: 2.5vw;
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
-  display: flex;
   align-items: center;
   margin-bottom: 3rem;
   color: #00123abd; }
@@ -286,6 +304,7 @@ section .subtitulo_desc {
 section .video {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 3rem; }
 
 section .video iframe {
@@ -299,7 +318,7 @@ section .video iframe {
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  font-size: 2rem;
+  font-size: 6vw;
   margin: 1em 0.8em; }
 
 .btn--Alanxelmundo {
@@ -309,7 +328,7 @@ section .video iframe {
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  font-size: 2rem;
+  font-size: 6vw;
   margin: 1em 0.8em; }
 
 .btn--Booking {
@@ -319,7 +338,7 @@ section .video iframe {
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  font-size: 2rem;
+  font-size: 6vw;
   margin: 1em 0.8em; }
 
 .btn--Couchsurfing {
@@ -329,7 +348,7 @@ section .video iframe {
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  font-size: 2rem;
+  font-size: 6vw;
   margin: 1em 0.8em; }
 
 .type1 {
@@ -400,18 +419,16 @@ section .contacto_cuadros {
     position: relative; }
     #footer .container h3 {
       font-family: 'Source Sans Pro';
-      font-size: 2vw;
-      font-weight: lighter;
-      font-size: 4vw;
+      font-size: 2.5vw;
+      font-size: 3vw;
       color: #00123abd;
       position: relative;
-      padding: 3rem;
+      padding: 6vw;
       margin: 0 0 1rem 0; }
     #footer .container p {
       font-family: 'Source Sans Pro';
+      font-size: 2.5vw;
       font-size: 2vw;
-      font-weight: lighter;
-      font-size: 3vw;
       padding: 0;
       margin-bottom: 3rem; }
     #footer .container .links {
@@ -423,8 +440,8 @@ section .contacto_cuadros {
       #footer .container .links a {
         text-decoration: none;
         font-family: 'Source Sans Pro';
+        font-size: 2.5vw;
         font-size: 2vw;
-        font-weight: lighter;
         display: inline-block;
         color: #00123abd;
         padding: 0 0;
@@ -474,16 +491,11 @@ section .contacto_cuadros {
     margin-top: 4rem; }
   /* RECOMENDACIONES */
   .titulo_descripcion {
-    font-size: 15px;
     font-weight: 700; }
   .sub_titulo {
-    font-size: 45px;
     margin-bottom: 5%; }
   .subtitulo1 {
-    font-size: 25px;
     align-items: center; }
-  .subtitulo_desc {
-    font-size: 15px; }
   .video iframe {
     width: 352px;
     height: 198px; }

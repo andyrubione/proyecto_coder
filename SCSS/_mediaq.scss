@@ -64,22 +64,15 @@
         /* RECOMENDACIONES */
 
         .titulo_descripcion {
-                font-size: 15px;
                 font-weight: 700;
         }
 
         .sub_titulo {
-                font-size: 45px;
                 margin-bottom: 5%;
         }
 
         .subtitulo1 {
-                font-size: 25px;
                 align-items: center;
-        }
-
-        .subtitulo_desc {
-                font-size: 15px;
         }
 
         .video iframe {
@@ -101,13 +94,12 @@
 @media screen and (max-width: 426px) {
 
         /* INDEX */
+        
 
         .el_turista {
                 font-size: 75px;
                 padding-top: 1rem;
                 padding-left: 0;
-        }
-        .presentacion {
         }
 
         /* CONOCEME */
@@ -181,6 +173,7 @@
                 margin-top: 4rem;
 
         }
+
 
 }
 

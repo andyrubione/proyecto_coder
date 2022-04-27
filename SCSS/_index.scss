@@ -10,19 +10,21 @@ section {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+        -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+        box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
     }
     .presentacion {
     @include texto;
     font-family:map-get($texto,font-family),sans-serif;
     color: map-get($texto,color);
     text-align: map-get($texto,text-align);
-    line-height: 130%;
     display: map-get($texto,display);
     align-items: map-get($texto,align-items);
     align-content: center;
     margin-top: 2rem;
     margin-bottom: 5rem;
-    font-size: 2vw;
+    
     }
     .parallax2 {
         background-image: url(../Imagen/PANO_20211026_112913-02-01.jpeg);
@@ -32,10 +34,12 @@ section {
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
+        -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+        -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+        box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
     }
     .presentacion2 {
         @extend .presentacion;
-        line-height: 130%;
         flex-direction: column;
         align-items: center;
         align-content: center;
@@ -55,18 +59,29 @@ section {
         max-width: 100vw;
         .imgHover1 {
             grid-area: Foto1;
+            -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+                -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+                box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
         }
         .imgHover2 {
             grid-area: Foto2;
+            -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+                -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+                box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
         }
         .imgHover3 {
             grid-area: Foto3;
+            -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+                -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+                box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
         }
         .imgHover4 {
             grid-area: Foto4;
+            -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+                -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+                box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
         }
         .HoverFoto {
-
             display: inline-block;
             width: 100%;
             max-width: 45vw;
@@ -79,25 +94,25 @@ section {
             }
             a {
                 text-decoration: none;
-                color: #fff;
+                color: $color-blue ;
                 width: 100%;
                 height: 100%;
                 left: 0;
                 text-align: center;
                 font-size: 3vw;
-                height: 0px;
                 position: absolute;
-                transition: 0.5s ease all;
-                visibility: hidden;
-                opacity: 0;
+                transition: 1s ease all;
+                visibility: visible;
+                opacity: 1;
                 bottom: 3px;
             }
             &:hover a {
-                background-color: rgba(255, 255, 255, 0.4);
+                background-color: rgba(255, 255, 255, 0.765);
+                backdrop-filter: blur( 8.5px );
                 visibility: visible;
                 height: fit-content;
                 padding: 2rem 0;
-                opacity: 1;
+                opacity: 0.9;
             }
         }
     }
@@ -108,5 +123,9 @@ section {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        -webkit-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+        -moz-box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
+        box-shadow: 0px 15px 6px -6px rgba(21, 21, 21, 0.7);
     }
+    
 }

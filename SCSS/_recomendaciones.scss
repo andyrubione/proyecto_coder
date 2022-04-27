@@ -55,6 +55,7 @@ section {
     .video {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-bottom: 3rem;
     }
 
@@ -79,7 +80,7 @@ $color in $reco {
         background-color: transparent;
         cursor: pointer;
         outline: none;
-        font-size: 2rem;
+        font-size: 6vw;
         margin: 1em 0.8em;
     }
 }
